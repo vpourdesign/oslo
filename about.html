@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Oslo Construction | Industrial Mechanics · Quebec</title>
+<title>Notre Histoire | Oslo Construction — Mécanique Industrielle · Québec</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Barlow+Condensed:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-:root {
-  --amber: #e5943e;
-  --crimson: #b54638;
-  --dark: #0d0d0d;
-  --surface: #161616;
-  --elevated: #1f1f1f;
-  --card: #242424;
-  --border: rgba(255,255,255,0.07);
-  --text: #f0ede8;
-  --muted: #7a7670;
-  --grad: linear-gradient(135deg, #e5943e 0%, #b54638 100%);
+:root{
+  --amber:#e5943e;--crimson:#b54638;--dark:#0d0d0d;--surface:#161616;
+  --elevated:#1f1f1f;--card:#242424;--border:rgba(255,255,255,0.07);
+  --text:#f0ede8;--muted:#7a7670;
+  --grad:linear-gradient(135deg,#e5943e 0%,#b54638 100%);
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{background:var(--dark);color:var(--text);font-family:'Barlow',sans-serif;font-weight:400;line-height:1.7;overflow-x:hidden;}
-body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:1;}
-::-webkit-scrollbar{width:3px;}
-::-webkit-scrollbar-track{background:var(--dark);}
-::-webkit-scrollbar-thumb{background:var(--amber);border-radius:2px;}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;}
+::-webkit-scrollbar{width:3px;}::-webkit-scrollbar-track{background:var(--dark);}::-webkit-scrollbar-thumb{background:var(--amber);border-radius:2px;}
 
-/* ── HEADER ── */
-#hdr{position:fixed;top:0;left:0;right:0;z-index:500;background:#fff;box-shadow:0 1px 0 rgba(0,0,0,0.09),0 2px 18px rgba(0,0,0,0.06);transition:box-shadow .35s ease;}
-#hdr.solid{box-shadow:0 1px 0 rgba(0,0,0,0.12),0 4px 28px rgba(0,0,0,0.1);}
+/* ══ HEADER ══ */
+#hdr{position:fixed;top:0;left:0;right:0;z-index:500;background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.09),0 2px 18px rgba(0,0,0,.06);transition:box-shadow .35s ease;}
 .hdr-inner{display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:76px;max-width:1520px;margin:0 auto;}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;}
 .logo-svg{width:44px;height:44px;}
@@ -42,1335 +33,890 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .nav-item>a,.nav-item>button{display:flex;align-items:center;gap:5px;padding:0 16px;height:76px;font-family:'Barlow Condensed',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(13,13,13,.5);text-decoration:none;background:none;border:none;cursor:pointer;white-space:nowrap;transition:color .2s ease;}
 .nav-item>a:hover,.nav-item>button:hover{color:var(--dark);}
 .nav-item>a.active-page{color:var(--crimson);}
-.nav-item.has-mega>button .chev{width:8px;height:8px;fill:none;stroke:currentColor;stroke-width:2;transition:transform .25s cubic-bezier(.34,1.56,.64,1);}
-.nav-item.has-mega.open>button{color:var(--amber) !important;}
-.nav-item.has-mega.open>button .chev{transform:rotate(180deg);}
 .nav-cta{padding:11px 26px;background:var(--grad);color:#fff !important;font-family:'Barlow Condensed',sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:2px;box-shadow:0 4px 20px rgba(229,148,62,.3);transition:opacity .2s ease,transform .2s ease,box-shadow .2s ease;}
 .nav-cta:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 8px 32px rgba(229,148,62,.4);}
-.lang-toggle{display:flex;align-items:center;border:1px solid rgba(0,0,0,0.14);border-radius:2px;overflow:hidden;margin-left:4px;}
-.lang-btn{padding:7px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(13,13,13,.45);background:none;border:none;border-right:1px solid rgba(0,0,0,0.1);cursor:pointer;transition:color .2s ease,background .2s ease;line-height:1;}
+.lang-toggle{display:flex;align-items:center;border:1px solid rgba(0,0,0,.14);border-radius:2px;overflow:hidden;margin-left:4px;}
+.lang-btn{padding:7px 12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(13,13,13,.45);background:none;border:none;border-right:1px solid rgba(0,0,0,.1);cursor:pointer;transition:color .2s,background .2s;line-height:1;}
 .lang-btn:last-child{border-right:none;}
 .lang-btn.active{background:var(--amber);color:#fff;}
-.lang-btn:hover:not(.active){color:var(--dark);background:rgba(0,0,0,0.04);}
-.mega{position:fixed;top:76px;left:0;right:0;z-index:499;pointer-events:none;opacity:0;transform:translateY(-6px);transition:opacity .22s ease,transform .22s cubic-bezier(.25,.46,.45,.94);}
-.mega.open{opacity:1;transform:translateY(0);pointer-events:all;}
-.mega-box{background:var(--surface);border-top:2px solid var(--amber);border-bottom:1px solid var(--border);box-shadow:0 32px 80px rgba(0,0,0,.7);}
-.mega-wrap{max-width:1520px;margin:0 auto;padding:0 48px;display:grid;}
-.mega-services .mega-wrap{grid-template-columns:220px 1fr;}
-.mega-side{padding:40px 40px 40px 0;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:16px;justify-content:center;}
-.mega-side-label{font-family:'Bebas Neue',cursive;font-size:52px;line-height:1;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.mega-side-desc{font-size:13px;color:var(--muted);line-height:1.6;max-width:180px;}
-.mega-content{padding:40px 0 40px 40px;}
-.mega-svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);}
-.msvc{background:var(--surface);padding:28px 24px;text-decoration:none;display:block;position:relative;overflow:hidden;transition:background .2s ease;}
-.msvc::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--grad);transform:scaleY(0);transition:transform .2s ease;transform-origin:bottom;}
-.msvc:hover{background:var(--elevated);}
-.msvc:hover::before{transform:scaleY(1);}
-.msvc-icon{font-size:28px;margin-bottom:12px;display:block;}
-.msvc-title{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text);margin-bottom:8px;display:block;}
-.msvc-desc{font-size:13px;color:var(--muted);line-height:1.55;}
-.mega-sectors .mega-wrap{grid-template-columns:180px 1fr;}
-.mega-sec-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;}
-.msec{padding:20px 18px;text-decoration:none;display:flex;align-items:flex-start;gap:10px;transition:background .15s ease;border-radius:1px;}
-.msec:hover{background:var(--elevated);}
-.msec:hover .msec-name{color:var(--amber);}
-.msec-dot{width:6px;height:6px;border-radius:50%;background:var(--grad);flex-shrink:0;margin-top:7px;}
-.msec-name{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text);transition:color .15s ease;line-height:1.3;}
-.mega-projects .mega-wrap{grid-template-columns:1fr;}
-.mega-proj-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--border);}
-.mproj{background:var(--surface);padding:24px 20px;text-decoration:none;display:block;transition:background .2s ease;}
-.mproj:hover{background:var(--elevated);}
-.mproj:hover .mproj-title{color:var(--amber);}
-.mproj-icon{font-size:22px;margin-bottom:10px;display:block;}
-.mproj-title{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text);transition:color .15s ease;}
+.lang-btn:hover:not(.active){color:var(--dark);background:rgba(0,0,0,.04);}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
 .hamburger span{display:block;width:24px;height:2px;background:var(--dark);transition:transform .3s ease,opacity .3s ease;}
 .mob-nav{display:none;position:fixed;inset:0;top:76px;background:rgba(13,13,13,.98);z-index:400;padding:32px 24px;overflow-y:auto;}
 .mob-nav.open{display:block;}
 .mob-nav a{display:block;padding:14px 0;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text);text-decoration:none;border-bottom:1px solid var(--border);}
 .mob-nav a:hover{color:var(--amber);}
-.mob-lang{display:flex;gap:8px;padding:20px 0 8px;}
+.mob-lang{display:flex;gap:8px;padding:20px 0;}
 .mob-lang-btn{padding:8px 18px;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);background:var(--surface);border:1px solid var(--border);border-radius:2px;cursor:pointer;transition:color .2s,background .2s,border-color .2s;}
 .mob-lang-btn.active{background:var(--amber);color:#fff;border-color:var(--amber);}
 
-/* ── SECTION UTILITIES ── */
-.sec-in{max-width:1520px;margin:0 auto;padding:0 48px;}
-.sec-tag{font-family:'Barlow Condensed',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+/* ══ GLOBAL UTILITIES ══ */
+.sec-in{max-width:1320px;margin:0 auto;padding:0 48px;}
+.sec-tag{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
 .sec-tag::before{content:'';display:block;width:22px;height:2px;background:var(--amber);}
-.sec-h{font-family:'Bebas Neue',cursive;font-size:clamp(48px,5vw,82px);line-height:1;letter-spacing:.01em;margin-bottom:20px;}
-.btn-pri{padding:13px 32px;background:var(--grad);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:2px;box-shadow:0 6px 28px rgba(229,148,62,.32);transition:transform .2s ease,box-shadow .2s ease;display:inline-block;}
-.btn-pri:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(229,148,62,.42);}
-.btn-ghost{padding:13px 32px;background:transparent;color:var(--text);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(240,237,232,.2);border-radius:2px;transition:border-color .2s ease,color .2s ease,transform .2s ease;display:inline-block;}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s cubic-bezier(.25,.46,.45,.94);}
+.rv.vis{opacity:1;transform:translateY(0);}
+.rv1{transition-delay:.1s;}.rv2{transition-delay:.2s;}.rv3{transition-delay:.3s;}.rv4{transition-delay:.4s;}.rv5{transition-delay:.5s;}
+.btn-pri{padding:14px 36px;background:var(--grad);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-radius:2px;box-shadow:0 6px 28px rgba(229,148,62,.32);transition:transform .2s ease,box-shadow .2s ease;display:inline-block;}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(229,148,62,.45);}
+.btn-ghost{padding:14px 36px;background:transparent;color:var(--text);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(240,237,232,.2);border-radius:2px;transition:border-color .2s,color .2s,transform .2s;display:inline-block;}
 .btn-ghost:hover{border-color:var(--amber);color:var(--amber);transform:translateY(-2px);}
 
-/* ── SCROLL REVEAL ── */
-.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.25,.46,.45,.94);}
-.rv.vis{opacity:1;transform:translateY(0);}
-.rv1{transition-delay:.1s;}.rv2{transition-delay:.2s;}.rv3{transition-delay:.3s;}.rv4{transition-delay:.4s;}
-
-/* ══ ABOUT PAGE SPECIFIC ══ */
-
-/* ── HERO ── Full-bleed editorial split */
-#ab-hero{position:relative;height:100vh;min-height:680px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;}
-.ab-hero-left{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding:0 72px 88px 48px;background:var(--dark);}
-.ab-hero-left::after{content:'';position:absolute;top:0;right:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--amber),transparent);}
-.ab-hero-right{position:relative;overflow:hidden;}
-.ab-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(20%);transform:scale(1.07);animation:hzoom 9s ease-out forwards;}
-.ab-hero-rgrad{position:absolute;inset:0;background:linear-gradient(to right,var(--dark) 0%,transparent 35%),linear-gradient(to top,rgba(13,13,13,.7) 0%,transparent 45%),radial-gradient(ellipse at 70% 40%,rgba(181,70,56,.28) 0%,transparent 55%);}
-.ab-hero-quote{position:absolute;bottom:88px;left:40px;right:40px;z-index:2;}
-.ab-hero-quote-text{font-family:'Barlow',sans-serif;font-size:18px;font-weight:300;font-style:italic;color:rgba(240,237,232,.75);line-height:1.6;border-left:2px solid var(--amber);padding-left:20px;}
-.ab-eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--amber);margin-bottom:20px;opacity:0;animation:fup .7s .2s ease forwards;}
-.ab-hero-h1{font-family:'Bebas Neue',cursive;font-size:clamp(80px,10vw,160px);line-height:.88;letter-spacing:.01em;color:var(--text);margin-bottom:28px;opacity:0;animation:fup .9s .4s ease forwards;}
-.ab-hero-h1 em{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal;display:block;}
-.ab-hero-sub{font-size:16px;font-weight:300;color:rgba(240,237,232,.55);line-height:1.7;max-width:440px;margin-bottom:40px;opacity:0;animation:fup .9s .6s ease forwards;}
-.ab-hero-btns{display:flex;gap:12px;opacity:0;animation:fup .9s .8s ease forwards;}
-.ab-counter-strip{display:flex;gap:0;border-top:1px solid var(--border);margin-top:40px;padding-top:32px;opacity:0;animation:fup .9s 1s ease forwards;}
-.ab-count{flex:1;border-right:1px solid var(--border);padding-right:24px;margin-right:24px;}
-.ab-count:last-child{border-right:none;margin-right:0;padding-right:0;}
-.ab-count-n{font-family:'Bebas Neue',cursive;font-size:44px;color:var(--amber);line-height:1;}
-.ab-count-l{font-family:'Barlow Condensed',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);}
-
+/* ══ HERO ══ */
+#hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(25%);transform:scale(1.08);animation:hzoom 10s ease-out forwards;}
 @keyframes hzoom{to{transform:scale(1);}}
-@keyframes fup{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+.hero-ov1{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,13,1) 0%,rgba(13,13,13,.8) 40%,rgba(13,13,13,.55) 75%,rgba(13,13,13,.35) 100%);}
+.hero-ov2{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,rgba(181,70,56,.18) 0%,transparent 65%),radial-gradient(ellipse at 20% 80%,rgba(229,148,62,.1) 0%,transparent 50%);}
+.hero-ghost-year{position:absolute;font-family:'Bebas Neue',cursive;font-size:clamp(140px,28vw,420px);line-height:1;color:rgba(240,237,232,.035);letter-spacing:.04em;top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;user-select:none;pointer-events:none;}
+.hero-cnt{position:relative;z-index:2;text-align:center;padding:0 32px;}
+.hero-eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.35em;text-transform:uppercase;color:var(--amber);margin-bottom:24px;display:inline-flex;align-items:center;gap:16px;opacity:0;animation:fup .8s .3s ease forwards;}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:28px;height:1px;background:var(--amber);}
+.hero-h1{font-family:'Bebas Neue',cursive;font-size:clamp(80px,13vw,196px);line-height:.88;letter-spacing:.02em;color:var(--text);margin-bottom:0;opacity:0;animation:fup .95s .5s ease forwards;}
+.hero-h1 .line2{display:block;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero-sep{width:60px;height:2px;background:var(--grad);margin:28px auto;opacity:0;animation:fup .8s .75s ease forwards;}
+.hero-sub{font-size:17px;font-weight:300;font-style:italic;font-family:'Playfair Display',serif;color:rgba(240,237,232,.65);max-width:560px;margin:0 auto 44px;line-height:1.7;opacity:0;animation:fup .9s .9s ease forwards;}
+.hero-btns{display:flex;gap:14px;justify-content:center;opacity:0;animation:fup .9s 1.1s ease forwards;}
+.hero-scroll-indicator{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:fin 1s 1.4s ease forwards;z-index:2;}
+.hero-scroll-indicator span{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);}
+.scroll-arrow{width:1px;height:52px;background:linear-gradient(to bottom,var(--amber),transparent);animation:scrollpulse 2s 1.8s ease infinite;}
+@keyframes scrollpulse{0%,100%{opacity:.35;transform:scaleY(1);}50%{opacity:1;transform:scaleY(.85);}}
+@keyframes fup{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fin{from{opacity:0;}to{opacity:1;}}
 
-/* ── HISTORY ── Cinematic editorial */
-#ab-history{background:var(--dark);padding:0;overflow:hidden;}
-.history-intro{padding:104px 0 0;}
-.history-intro .sec-in{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start;}
-.history-text-col{}
-.history-body{font-size:18px;font-weight:300;color:rgba(240,237,232,.7);line-height:1.78;}
-.history-body p{margin-bottom:22px;}
-.history-pull-wrap{display:flex;flex-direction:column;justify-content:center;padding-top:40px;}
-.history-pull{font-family:'Bebas Neue',cursive;font-size:clamp(56px,6vw,100px);line-height:.92;letter-spacing:.01em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px;}
-.history-pull-sub{font-family:'Barlow',sans-serif;font-size:15px;font-weight:300;color:var(--muted);line-height:1.6;}
+/* ══ CHAPTER LABEL ══ */
+.chapter-label{display:flex;align-items:center;gap:16px;margin-bottom:32px;}
+.chapter-num{font-family:'Bebas Neue',cursive;font-size:13px;letter-spacing:.3em;color:var(--crimson);padding:4px 10px;border:1px solid var(--crimson);opacity:.8;}
+.chapter-name{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);}
 
-/* Timeline */
-.history-timeline{margin-top:80px;position:relative;}
-.timeline-line{position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--amber) 20%,var(--crimson) 80%,transparent);transform:translateX(-50%);}
-.timeline-items{position:relative;z-index:1;}
-.tl-item{display:grid;grid-template-columns:1fr 1fr;align-items:center;margin-bottom:0;}
-.tl-item:nth-child(odd) .tl-content{padding:64px 72px 64px 0;text-align:right;}
-.tl-item:nth-child(odd) .tl-img{order:1;}
-.tl-item:nth-child(even) .tl-content{padding:64px 0 64px 72px;order:1;}
-.tl-item:nth-child(even) .tl-img{order:0;}
-.tl-img{position:relative;height:360px;overflow:hidden;}
-.tl-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s ease;}
-.tl-img:hover img{transform:scale(1.04);}
-.tl-img-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(229,148,62,.1),rgba(181,70,56,.12));mix-blend-mode:color;}
-.tl-era{font-family:'Bebas Neue',cursive;font-size:80px;line-height:1;color:rgba(255,255,255,.06);margin-bottom:-12px;display:block;}
-.tl-title{font-family:'Bebas Neue',cursive;font-size:40px;letter-spacing:.02em;color:var(--text);margin-bottom:12px;line-height:1;}
-.tl-body{font-size:15.5px;font-weight:300;color:rgba(240,237,232,.6);line-height:1.7;}
-.tl-dot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:14px;height:14px;border-radius:50%;background:var(--grad);box-shadow:0 0 0 4px var(--dark),0 0 0 5px var(--amber);z-index:2;}
+/* ══ HISTORY ══ */
+#history{position:relative;padding:120px 0 0;overflow:hidden;}
+.history-ghost{position:absolute;font-family:'Bebas Neue',cursive;font-size:clamp(140px,22vw,340px);line-height:1;color:rgba(229,148,62,.04);letter-spacing:.02em;top:60px;right:-40px;user-select:none;pointer-events:none;}
+.history-top{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-bottom:80px;}
+.history-text-side{}
+.history-h{font-family:'Bebas Neue',cursive;font-size:clamp(48px,5vw,80px);line-height:1;letter-spacing:.01em;color:var(--text);margin-bottom:28px;}
+.history-h em{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal;}
+.history-body{font-size:17px;font-weight:300;color:rgba(240,237,232,.68);line-height:1.82;margin-bottom:20px;}
+.history-years-badge{display:inline-flex;align-items:baseline;gap:4px;margin-top:16px;}
+.hbadge-n{font-family:'Bebas Neue',cursive;font-size:72px;line-height:1;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hbadge-l{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-left:4px;}
+.history-img-side{position:relative;}
+.history-img-wrap{position:relative;height:560px;overflow:hidden;}
+.history-img-wrap img{width:100%;height:100%;object-fit:cover;filter:sepia(15%) contrast(1.05);display:block;transition:transform .7s ease;}
+.history-img-wrap:hover img{transform:scale(1.04);}
+.history-img-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(229,148,62,.12),rgba(181,70,56,.18));mix-blend-mode:color;}
+.history-img-ov2{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,13,.65) 0%,transparent 45%);}
+.history-img-caption{position:absolute;bottom:24px;left:24px;right:24px;}
+.history-img-cap-text{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(240,237,232,.5);}
+.history-img-decor{position:absolute;top:-20px;right:-20px;width:80px;height:80px;border:1px solid var(--amber);opacity:.25;}
 
-/* ── CLIENTS ── Scrolling marquee strip */
-#ab-clients{background:var(--surface);padding:72px 0;overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
-.clients-label{text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:40px;}
-.marquee-track{display:flex;gap:0;overflow:hidden;position:relative;}
-.marquee-track::before,.marquee-track::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none;}
-.marquee-track::before{left:0;background:linear-gradient(to right,var(--surface),transparent);}
-.marquee-track::after{right:0;background:linear-gradient(to left,var(--surface),transparent);}
-.marquee-inner{display:flex;gap:0;animation:marquee 28s linear infinite;white-space:nowrap;}
-.marquee-inner:hover{animation-play-state:paused;}
-.client-name{font-family:'Bebas Neue',cursive;font-size:32px;letter-spacing:.06em;color:rgba(240,237,232,.18);padding:0 48px;border-right:1px solid var(--border);transition:color .3s ease;cursor:default;flex-shrink:0;}
-.client-name:hover{color:var(--amber);}
-@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+/* Full-width pull quote */
+.pull-quote-section{padding:80px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:0;position:relative;overflow:hidden;}
+.pull-quote-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(229,148,62,.05) 0%,transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(181,70,56,.04) 0%,transparent 60%);}
+.pull-quote{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(28px,4vw,52px);line-height:1.25;text-align:center;color:var(--text);max-width:980px;margin:0 auto;position:relative;z-index:1;}
+.pull-quote em{color:var(--amber);font-style:italic;}
+.pull-quote-attr{text-align:center;margin-top:28px;font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);}
 
-/* ── WHO WE ARE / EXPERTISE ── Full bleed + text */
-#ab-expertise{background:var(--dark);padding:0;overflow:hidden;}
-.expertise-grid{display:grid;grid-template-columns:1fr 1fr;min-height:620px;}
-.expertise-img{position:relative;overflow:hidden;}
-.expertise-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .65s ease;}
-.expertise-img:hover img{transform:scale(1.03);}
-.expertise-img-ov{position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,var(--dark) 100%),linear-gradient(135deg,rgba(229,148,62,.1),rgba(181,70,56,.14));mix-blend-mode:normal;}
-.expertise-img-ov2{position:absolute;inset:0;background:linear-gradient(135deg,rgba(229,148,62,.08),rgba(181,70,56,.08));mix-blend-mode:color;}
-.expertise-text{display:flex;flex-direction:column;justify-content:center;padding:88px 72px 88px 64px;}
-.expertise-body{font-size:17px;font-weight:300;color:rgba(240,237,232,.7);line-height:1.78;margin-bottom:28px;}
-.exp-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px;}
-.exp-tag{padding:8px 16px;background:var(--surface);border:1px solid var(--border);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-radius:2px;transition:border-color .2s,color .2s;}
-.exp-tag:hover{border-color:var(--amber);color:var(--text);}
+/* ══ STATS BAR ══ */
+#stats-bar{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.stats-inner{display:grid;grid-template-columns:repeat(4,1fr);divide-x:1px solid var(--border);}
+.stat-item{padding:48px 40px;border-right:1px solid var(--border);text-align:center;position:relative;transition:background .2s ease;}
+.stat-item:last-child{border-right:none;}
+.stat-item:hover{background:var(--elevated);}
+.stat-n{font-family:'Bebas Neue',cursive;font-size:64px;line-height:1;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;}
+.stat-l{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:4px;display:block;}
 
-/* ── TRADES ── 2x2 cards with images */
-#ab-trades{background:var(--surface);padding:104px 0;}
-.trades-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:56px;background:var(--border);}
-.trade-card{position:relative;height:420px;overflow:hidden;display:block;text-decoration:none;}
-.trade-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .65s cubic-bezier(.25,.46,.45,.94);}
-.trade-card:hover .trade-bg{transform:scale(1.07);}
-.trade-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,13,.97) 0%,rgba(13,13,13,.55) 50%,rgba(13,13,13,.12) 100%);transition:background .3s ease;}
-.trade-card:hover .trade-ov{background:linear-gradient(to top,rgba(13,13,13,.98) 0%,rgba(13,13,13,.72) 55%,rgba(181,70,56,.15) 100%);}
-.trade-color-band{position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--grad);transform:scaleY(0);transition:transform .4s ease;transform-origin:bottom;}
-.trade-card:hover .trade-color-band{transform:scaleY(1);}
-.trade-cnt{position:absolute;inset:0;padding:36px 40px;display:flex;flex-direction:column;justify-content:flex-end;}
-.trade-num{font-family:'Bebas Neue',cursive;font-size:96px;color:rgba(255,255,255,.04);position:absolute;top:8px;right:16px;line-height:1;}
-.trade-ico{width:50px;height:50px;background:var(--grad);display:flex;align-items:center;justify-content:center;margin-bottom:16px;border-radius:2px;font-size:22px;flex-shrink:0;}
-.trade-title{font-family:'Bebas Neue',cursive;font-size:40px;letter-spacing:.02em;color:var(--text);margin-bottom:10px;line-height:1;}
-.trade-desc{font-size:14.5px;color:rgba(240,237,232,.6);line-height:1.6;max-width:360px;}
+/* ══ CLIENTS WALL ══ */
+#clients{padding:104px 0;background:var(--dark);}
+.clients-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:56px;}
+.client-item{background:var(--dark);padding:36px 32px;position:relative;overflow:hidden;cursor:default;transition:background .25s ease;}
+.client-item::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:var(--grad);transform:scaleX(0);transition:transform .35s ease;transform-origin:left;}
+.client-item:hover{background:var(--surface);}
+.client-item:hover::before{transform:scaleX(1);}
+.client-name{font-family:'Bebas Neue',cursive;letter-spacing:.05em;color:rgba(240,237,232,.2);transition:color .25s ease;line-height:1.1;display:block;}
+.client-item:hover .client-name{color:var(--text);}
+.client-item.lg .client-name{font-size:52px;}
+.client-item.md .client-name{font-size:40px;}
+.client-item.sm .client-name{font-size:28px;}
+.client-sector{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:6px;opacity:0;transition:opacity .25s ease;}
+.client-item:hover .client-sector{opacity:1;}
 
-/* ── MANAGEMENT / GESTION ── */
-#ab-mgmt{background:var(--dark);padding:104px 0;position:relative;overflow:hidden;}
-#ab-mgmt::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 50%,rgba(229,148,62,.04) 0%,transparent 55%),radial-gradient(ellipse at 100% 50%,rgba(181,70,56,.04) 0%,transparent 55%);}
-.mgmt-grid{display:grid;grid-template-columns:1fr 1fr;gap:104px;align-items:center;position:relative;z-index:1;}
-.mgmt-text-col{}
-.mgmt-body{font-size:17px;font-weight:300;color:rgba(240,237,232,.68);line-height:1.78;margin-bottom:36px;}
-.mgmt-body p{margin-bottom:18px;}
-/* CSS Pyramid */
-.pyramid-wrap{display:flex;flex-direction:column;align-items:center;gap:0;position:relative;padding:40px 20px;}
-.pyramid-wrap::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,rgba(255,255,255,.04),transparent);}
-.pyr-tier{display:flex;flex-direction:column;align-items:center;gap:0;}
-.pyr-block{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;clip-path:none;background:var(--grad);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-align:center;position:relative;transition:transform .2s ease;}
-.pyr-block:hover{transform:scale(1.02);}
-.pyr-top{width:180px;height:100px;clip-path:polygon(50% 0%, 100% 100%, 0% 100%);background:var(--grad);margin-bottom:0;}
-.pyr-mid{width:300px;height:90px;clip-path:polygon(16.7% 0%,83.3% 0%,100% 100%,0% 100%);background:linear-gradient(135deg,rgba(229,148,62,.7),rgba(181,70,56,.7));margin-bottom:0;}
-.pyr-bot{width:420px;height:90px;clip-path:polygon(11.9% 0%,88.1% 0%,100% 100%,0% 100%);background:linear-gradient(135deg,rgba(229,148,62,.45),rgba(181,70,56,.45));margin-bottom:0;}
-.pyr-base{width:420px;height:0;border-top:4px solid var(--amber);}
-.pyr-label{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-align:center;margin:8px 0 4px;color:var(--muted);}
-.pyr-sub{font-size:11.5px;color:rgba(122,118,112,.6);text-align:center;font-family:'Barlow Condensed',sans-serif;letter-spacing:.08em;}
-.pyr-inner-text{font-size:11px;letter-spacing:.14em;font-weight:700;text-transform:uppercase;text-align:center;color:#fff;padding-top:28px;font-family:'Barlow Condensed',sans-serif;line-height:1.3;}
-.pyr-mid-text{font-size:11px;letter-spacing:.12em;font-weight:700;text-transform:uppercase;text-align:center;color:rgba(255,255,255,.9);padding-top:20px;font-family:'Barlow Condensed',sans-serif;}
-.pyr-bot-text{font-size:11px;letter-spacing:.12em;font-weight:700;text-transform:uppercase;text-align:center;color:rgba(255,255,255,.85);padding-top:22px;font-family:'Barlow Condensed',sans-serif;}
-.pyr-axis{display:flex;justify-content:space-between;width:420px;margin-top:16px;}
-.pyr-axis-item{font-family:'Barlow Condensed',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);display:flex;flex-direction:column;align-items:center;gap:4px;}
-.pyr-axis-line{width:1px;height:20px;background:var(--amber);}
+/* ══ DISCIPLINES ══ */
+#disciplines{background:var(--surface);padding:104px 0;border-top:1px solid var(--border);}
+.disc-grid{margin-top:56px;display:flex;flex-direction:column;gap:2px;}
+.disc-row{display:grid;grid-template-columns:80px 1fr 360px;align-items:stretch;background:var(--dark);gap:0;position:relative;overflow:hidden;transition:background .2s ease;cursor:default;}
+.disc-row:hover{background:var(--elevated);}
+.disc-num-col{display:flex;align-items:center;justify-content:center;padding:40px 24px;border-right:1px solid var(--border);}
+.disc-num{font-family:'Bebas Neue',cursive;font-size:28px;color:var(--crimson);opacity:.6;}
+.disc-text-col{padding:48px 48px;border-right:1px solid var(--border);}
+.disc-title{font-family:'Bebas Neue',cursive;font-size:36px;letter-spacing:.02em;color:var(--text);margin-bottom:12px;line-height:1;}
+.disc-body{font-size:15px;font-weight:300;color:rgba(240,237,232,.6);line-height:1.72;max-width:480px;}
+.disc-tag{display:inline-block;margin-top:16px;padding:5px 12px;border:1px solid var(--border);font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);border-color:rgba(229,148,62,.3);}
+.disc-img-col{position:relative;overflow:hidden;min-height:200px;}
+.disc-img-col img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(20%);transition:transform .6s ease,filter .4s ease;}
+.disc-row:hover .disc-img-col img{transform:scale(1.06);filter:grayscale(0%);}
+.disc-img-col::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--elevated) 0%,transparent 50%),linear-gradient(135deg,rgba(229,148,62,.1),rgba(181,70,56,.15));z-index:1;mix-blend-mode:normal;}
+.disc-img-col::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(229,148,62,.08),rgba(181,70,56,.1));mix-blend-mode:color;z-index:2;}
 
-/* ── VALUES ── */
-#ab-values{background:var(--surface);padding:104px 0;}
-.values-grid{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start;}
-.values-text-col{}
-.values-body{font-size:17px;font-weight:300;color:rgba(240,237,232,.68);line-height:1.78;margin-bottom:32px;}
-.values-list{list-style:none;display:flex;flex-direction:column;gap:0;}
-.val-item{display:flex;align-items:flex-start;gap:16px;padding:18px 0;border-bottom:1px solid var(--border);}
-.val-item:first-child{border-top:1px solid var(--border);}
-.val-check{width:28px;height:28px;background:var(--grad);border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
-.val-check svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
-.val-text{font-size:15.5px;color:rgba(240,237,232,.78);line-height:1.55;}
-.val-highlight{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--text);display:block;margin-bottom:2px;}
-.values-img-col{position:sticky;top:120px;}
-.val-img-wrap{position:relative;height:520px;}
-.val-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;}
-.val-img-wrap::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(229,148,62,.1),rgba(181,70,56,.12));mix-blend-mode:color;z-index:1;}
-.val-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(to top right,rgba(13,13,13,.4),transparent 55%);}
-.val-badge{position:absolute;top:28px;right:28px;background:var(--grad);padding:16px 20px;text-align:center;z-index:2;border-radius:2px;box-shadow:0 8px 36px rgba(229,148,62,.38);}
-.val-badge-t{font-family:'Bebas Neue',cursive;font-size:48px;color:#fff;line-height:1;display:block;}
-.val-badge-l{font-family:'Barlow Condensed',sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.8);display:block;line-height:1.4;}
+/* ══ EXPERTISE BAND ══ */
+#expertise-band{position:relative;overflow:hidden;min-height:480px;display:flex;align-items:center;}
+.expertise-band-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(30%);}
+.expertise-band-ov{position:absolute;inset:0;background:linear-gradient(to right,rgba(13,13,13,1) 0%,rgba(13,13,13,.92) 45%,rgba(13,13,13,.6) 75%,rgba(13,13,13,.3) 100%);}
+.expertise-band-ov2{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(181,70,56,.18) 0%,transparent 60%);mix-blend-mode:screen;}
+.expertise-band-cnt{position:relative;z-index:2;max-width:640px;}
+.eb-h{font-family:'Bebas Neue',cursive;font-size:clamp(44px,5vw,76px);line-height:1;letter-spacing:.01em;color:var(--text);margin-bottom:20px;}
+.eb-body{font-size:16px;font-weight:300;color:rgba(240,237,232,.68);line-height:1.78;margin-bottom:28px;}
+.eb-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.eb-tag{padding:7px 14px;background:rgba(255,255,255,.04);border:1px solid var(--border);font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);transition:border-color .2s,color .2s;}
+.eb-tag:hover{border-color:var(--amber);color:var(--text);}
 
-/* ── CONTRACT TYPES ── */
-#ab-contracts{background:var(--dark);padding:104px 0;}
-.contracts-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;background:var(--border);}
-.contract-card{background:var(--surface);padding:40px 36px;position:relative;overflow:hidden;transition:background .2s ease;}
-.contract-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--grad);transform:scaleX(0);transition:transform .3s ease;}
-.contract-card:hover{background:var(--elevated);}
-.contract-card:hover::after{transform:scaleX(1);}
-.cc-num{font-family:'Bebas Neue',cursive;font-size:88px;color:rgba(255,255,255,.04);position:absolute;top:-8px;right:16px;line-height:1;}
-.cc-ico{width:54px;height:54px;background:var(--grad);display:flex;align-items:center;justify-content:center;margin-bottom:20px;border-radius:2px;font-size:24px;}
-.cc-title{font-family:'Bebas Neue',cursive;font-size:36px;letter-spacing:.02em;color:var(--text);margin-bottom:12px;line-height:1;}
-.cc-desc{font-size:15px;font-weight:300;color:rgba(240,237,232,.6);line-height:1.65;}
+/* ══ PHILOSOPHY / PYRAMID ══ */
+#philosophy{padding:120px 0;background:var(--dark);overflow:hidden;}
+.philo-inner{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:center;}
+.philo-text{}
+.philo-h{font-family:'Bebas Neue',cursive;font-size:clamp(48px,5vw,80px);line-height:1;color:var(--text);margin-bottom:20px;}
+.philo-body{font-size:16px;font-weight:300;color:rgba(240,237,232,.68);line-height:1.8;margin-bottom:32px;}
+.philo-pillars{display:flex;flex-direction:column;gap:12px;margin-top:8px;}
+.pillar{display:flex;align-items:flex-start;gap:16px;padding:20px;border:1px solid var(--border);background:var(--surface);transition:border-color .25s ease,background .25s ease;}
+.pillar:hover{border-color:rgba(229,148,62,.3);background:var(--elevated);}
+.pillar-icon{width:36px;height:36px;background:var(--grad);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;}
+.pillar-text-wrap{}
+.pillar-title{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text);margin-bottom:4px;}
+.pillar-desc{font-size:13px;color:var(--muted);line-height:1.55;}
 
-/* ── CTA ── */
-#ab-cta{position:relative;overflow:hidden;padding:0;}
-.ab-cta-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80');background-size:cover;background-position:center;filter:grayscale(30%);}
-.ab-cta-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(229,148,62,.96) 0%,rgba(181,70,56,.98) 100%);}
-.ab-cta-cnt{position:relative;z-index:2;padding:120px 48px;max-width:1520px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:80px;align-items:center;}
-.ab-cta-h{font-family:'Bebas Neue',cursive;font-size:clamp(56px,7vw,104px);color:#fff;line-height:.92;letter-spacing:.01em;}
-.ab-cta-sub{font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:560px;margin:16px 0 0;}
-.ab-cta-actions{display:flex;flex-direction:column;gap:12px;flex-shrink:0;}
-.btn-wht{padding:15px 40px;background:#fff;color:var(--crimson);font-family:'Barlow Condensed',sans-serif;font-size:13.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:2px;box-shadow:0 8px 32px rgba(0,0,0,.18);transition:transform .2s ease,box-shadow .2s ease;display:inline-block;text-align:center;}
-.btn-wht:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(0,0,0,.28);}
-.btn-wht-ghost{padding:15px 40px;background:transparent;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:13.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:2px solid rgba(255,255,255,.45);border-radius:2px;transition:border-color .2s,background .2s;display:inline-block;text-align:center;}
-.btn-wht-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1);}
+/* SVG PYRAMID */
+.pyramid-side{display:flex;flex-direction:column;align-items:center;gap:0;}
+.pyramid-svg-wrap{width:100%;max-width:440px;}
+.pyramid-svg-wrap svg{width:100%;height:auto;display:block;}
+.pyr-seg{transition:opacity .25s ease,filter .25s ease;cursor:pointer;}
+.pyr-seg:hover{opacity:.85;filter:brightness(1.15);}
+.pyr-label{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:.18em;fill:rgba(240,237,232,.8);text-transform:uppercase;}
+.pyr-label-main{font-family:'Bebas Neue',cursive;font-size:18px;letter-spacing:.05em;fill:rgba(240,237,232,.95);}
+.pyramid-legend{margin-top:32px;display:flex;flex-direction:column;gap:8px;width:100%;max-width:440px;}
+.pleg-item{display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--surface);border:1px solid var(--border);}
+.pleg-dot{width:12px;height:12px;border-radius:1px;flex-shrink:0;}
+.pleg-text{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
 
-/* ── FOOTER ── */
-footer{background:#080808;padding:64px 0 28px;border-top:1px solid var(--border);}
-.ft-in{max-width:1520px;margin:0 auto;padding:0 48px;}
-.ft-top{display:grid;grid-template-columns:300px 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
-.ft-brand p{font-size:13.5px;color:var(--muted);line-height:1.65;margin-top:16px;font-weight:300;}
-.ft-col-t{font-family:'Barlow Condensed',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);margin-bottom:18px;}
-.ft-links{list-style:none;display:flex;flex-direction:column;gap:9px;}
-.ft-links a{font-size:13.5px;color:var(--muted);text-decoration:none;transition:color .18s ease;font-weight:300;}
-.ft-links a:hover{color:var(--text);}
-.ft-bot{border-top:1px solid var(--border);padding-top:28px;display:flex;justify-content:space-between;align-items:center;}
-.ft-copy{font-size:12.5px;color:var(--muted);}
-.ft-social{display:flex;gap:10px;}
-.soc{width:36px;height:36px;background:var(--surface);border:1px solid var(--border);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none;font-size:14px;transition:border-color .18s ease,color .18s ease,background .18s ease;}
-.soc:hover{border-color:var(--amber);color:var(--amber);background:rgba(229,148,62,.08);}
+/* ══ VALUES ══ */
+#values{background:var(--surface);padding:104px 0;border-top:1px solid var(--border);}
+.values-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:56px;background:var(--border);}
+.val-item{background:var(--surface);padding:36px 32px;display:flex;gap:24px;align-items:flex-start;position:relative;overflow:hidden;transition:background .2s ease;}
+.val-item:hover{background:var(--elevated);}
+.val-item::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--grad);transform:scaleX(0);transition:transform .35s ease;transform-origin:left;}
+.val-item:hover::after{transform:scaleX(1);}
+.val-ord{font-family:'Bebas Neue',cursive;font-size:52px;line-height:1;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;flex-shrink:0;min-width:56px;opacity:.7;}
+.val-text{}
+.val-title{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text);margin-bottom:8px;}
+.val-desc{font-size:14px;font-weight:300;color:rgba(240,237,232,.55);line-height:1.65;}
 
-/* ── RESPONSIVE ── */
-@media(max-width:1200px){
-  #ab-hero{grid-template-columns:1fr;}
-  .ab-hero-right{display:none;}
-  .ab-hero-left{height:100vh;justify-content:flex-end;background:var(--dark);position:relative;}
-  .history-intro .sec-in{grid-template-columns:1fr;}
-  .history-pull-wrap{padding-top:0;}
-  .tl-item{grid-template-columns:1fr;}
-  .tl-item:nth-child(odd) .tl-content{padding:40px 48px;text-align:left;}
-  .tl-item:nth-child(even) .tl-content{padding:40px 48px;}
-  .tl-item:nth-child(odd) .tl-img{order:0;}
-  .tl-item:nth-child(even) .tl-img{order:0;}
-  .timeline-line{display:none;}
-  .tl-dot{display:none;}
-  .mgmt-grid{grid-template-columns:1fr;gap:56px;}
-  .values-grid{grid-template-columns:1fr;}
-  .values-img-col{display:none;}
-  .ab-cta-cnt{grid-template-columns:1fr;}
-  .ab-cta-actions{flex-direction:row;}
-  .ft-top{grid-template-columns:1fr 1fr;gap:40px;}
-  .mega-svc-grid{grid-template-columns:repeat(2,1fr);}
-  .mega-sec-grid{grid-template-columns:repeat(4,1fr);}
-  .mega-proj-grid{grid-template-columns:repeat(3,1fr);}
-  .mega-side{display:none;}
-  .mega-services .mega-wrap,.mega-sectors .mega-wrap{grid-template-columns:1fr;}
-  .mega-content{padding:40px 0;}
-}
-@media(max-width:768px){
-  .hdr-inner{padding:0 20px;}
-  .nav-list{display:none;}
-  .lang-toggle{display:none;}
+/* ══ CONTRACT TYPES ══ */
+#contracts{padding:80px 0;background:var(--dark);border-top:1px solid var(--border);}
+.contract-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);margin-top:48px;}
+.contract-item{background:var(--dark);padding:48px 40px;text-align:center;transition:background .25s ease;position:relative;overflow:hidden;}
+.contract-item::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);transform:scaleX(0);transition:transform .4s cubic-bezier(.25,.46,.45,.94);transform-origin:center;}
+.contract-item:hover{background:var(--surface);}
+.contract-item:hover::before{transform:scaleX(1);}
+.contract-icon{font-size:36px;margin-bottom:20px;display:block;}
+.contract-title{font-family:'Bebas Neue',cursive;font-size:32px;letter-spacing:.03em;color:var(--text);margin-bottom:12px;}
+.contract-body{font-size:14px;font-weight:300;color:rgba(240,237,232,.55);line-height:1.65;}
+
+/* ══ CTA ══ */
+#cta{position:relative;overflow:hidden;padding:100px 0;}
+.cta-bg{position:absolute;inset:0;background:var(--grad);}
+.cta-grain{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");pointer-events:none;}
+.cta-lines{position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0px,rgba(255,255,255,.03) 1px,transparent 1px,transparent 80px);pointer-events:none;}
+.cta-cnt{position:relative;z-index:2;text-align:center;}
+.cta-h{font-family:'Bebas Neue',cursive;font-size:clamp(56px,7vw,100px);line-height:.92;letter-spacing:.02em;color:#fff;margin-bottom:20px;}
+.cta-sub{font-size:17px;font-weight:300;color:rgba(255,255,255,.75);margin-bottom:40px;line-height:1.6;}
+.cta-btn{padding:16px 44px;background:#fff;color:var(--crimson);font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-radius:2px;display:inline-block;transition:transform .2s ease,box-shadow .2s ease;}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.25);}
+
+/* ══ FOOTER ══ */
+footer{background:var(--surface);border-top:1px solid var(--border);padding:32px 0;}
+.foot-inner{max-width:1320px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;}
+.foot-copy{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);}
+.foot-logo{font-family:'Bebas Neue',cursive;font-size:20px;letter-spacing:.1em;color:rgba(240,237,232,.15);}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:900px){
+  .history-top,.philo-inner,.values-grid{grid-template-columns:1fr;}
+  .disc-row{grid-template-columns:60px 1fr;}
+  .disc-img-col{display:none;}
+  .clients-grid{grid-template-columns:1fr 1fr;}
+  .contract-grid,.stats-inner{grid-template-columns:1fr 1fr;}
+  .hdr-inner{padding:0 24px;}
   .hamburger{display:flex;}
-  .mega{display:none !important;}
-  .sec-in{padding:0 20px;}
-  .ab-hero-left{padding:0 20px 64px;}
-  .history-intro{padding:64px 0 0;}
-  .trades-grid{grid-template-columns:1fr;}
-  .contracts-cards{grid-template-columns:1fr;}
-  .ab-cta-cnt{padding:80px 20px;}
-  .ab-cta-actions{flex-direction:column;}
-  .expertise-grid{grid-template-columns:1fr;}
-  .expertise-img{height:320px;position:relative;}
-  .expertise-text{padding:48px 20px;}
-  .ft-top{grid-template-columns:1fr;}
+  .nav-list,.lang-toggle{display:none;}
+  .sec-in{padding:0 24px;}
+  .hero-ghost-year{font-size:clamp(100px,35vw,200px);}
+}
+@media(max-width:600px){
+  .contract-grid,.stats-inner,.clients-grid,.values-grid{grid-template-columns:1fr;}
 }
 </style>
 </head>
 <body>
 
-<!-- ══════════════════════════════════
-     HEADER
-══════════════════════════════════ -->
+<!-- ══ HEADER ══ -->
 <header id="hdr">
   <div class="hdr-inner">
     <a href="index.html" class="logo">
       <svg class="logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="22,4 40,38 4,38" fill="#b54638" opacity=".15"/>
-        <polygon points="22,4 36,38 22,38" fill="#b54638"/>
-        <polygon points="22,4 36,38 8,38" fill="#e5943e"/>
-        <polygon points="22,4 22,38 8,38" fill="#b54638" opacity=".7"/>
+        <rect width="44" height="44" rx="2" fill="#0d0d0d"/>
+        <polygon points="22,8 38,36 6,36" fill="none" stroke="url(#lg1)" stroke-width="2"/>
+        <line x1="22" y1="14" x2="22" y2="36" stroke="url(#lg1)" stroke-width="1.2"/>
+        <line x1="14" y1="30" x2="30" y2="30" stroke="url(#lg1)" stroke-width="1.2"/>
+        <defs>
+          <linearGradient id="lg1" x1="6" y1="8" x2="38" y2="36" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#e5943e"/><stop offset="1" stop-color="#b54638"/>
+          </linearGradient>
+        </defs>
       </svg>
       <div class="logo-text">
-        <span class="logo-oslo">OSLO</span>
+        <span class="logo-oslo">Oslo</span>
         <span class="logo-construction">Construction</span>
       </div>
     </a>
-
-    <ul class="nav-list" id="navList">
-      <li class="nav-item"><a href="about.html" class="active-page" data-i18n="nav.about">About</a></li>
-      <li class="nav-item has-mega" data-mega="mega-services">
-        <button type="button"><span data-i18n="nav.services">Our Services</span>
-          <svg class="chev" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </li>
-      <li class="nav-item has-mega" data-mega="mega-sectors">
-        <button type="button"><span data-i18n="nav.sectors">Sectors</span>
-          <svg class="chev" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </li>
-      <li class="nav-item has-mega" data-mega="mega-projects">
-        <button type="button"><span data-i18n="nav.projects">Projects</span>
-          <svg class="chev" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </li>
-      <li class="nav-item"><a href="index.html#fab" data-i18n="nav.manufacturing">Manufacturing</a></li>
-      <li class="nav-item"><a href="index.html#careers" data-i18n="nav.careers">Careers</a></li>
-    </ul>
-
-    <div style="display:flex;align-items:center;gap:12px;">
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+        <li class="nav-item"><a href="#disciplines" data-i18n="nav_services">Services</a></li>
+        <li class="nav-item"><a href="#clients" data-i18n="nav_clients">Clients</a></li>
+        <li class="nav-item"><a href="about2.html" class="active-page" data-i18n="nav_about">À propos</a></li>
+        <li class="nav-item"><a href="#cta" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;align-items:center;gap:16px;">
       <div class="lang-toggle">
-        <button class="lang-btn active" id="btnEn" onclick="setLang('en')">EN</button>
-        <button class="lang-btn" id="btnFr" onclick="setLang('fr')">FR</button>
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a href="index.html#contact" class="nav-cta" data-i18n="nav.contact">Contact Us</a>
-      <button class="hamburger" id="hamBtn" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="#cta" class="nav-cta" data-i18n="nav_cta">Soumission</a>
     </div>
+    <button class="hamburger" id="burgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
-
-<!-- Mobile Nav -->
 <nav class="mob-nav" id="mobNav">
+  <a href="index.html" data-i18n="nav_home">Accueil</a>
+  <a href="#disciplines" data-i18n="nav_services">Services</a>
+  <a href="#clients" data-i18n="nav_clients">Clients</a>
+  <a href="about2.html" data-i18n="nav_about">À propos</a>
+  <a href="#cta" data-i18n="nav_contact">Contact</a>
   <div class="mob-lang">
-    <button class="mob-lang-btn active" id="mobBtnEn" onclick="setLang('en')">EN</button>
-    <button class="mob-lang-btn" id="mobBtnFr" onclick="setLang('fr')">FR</button>
+    <button class="mob-lang-btn active" data-lang="fr">FR</button>
+    <button class="mob-lang-btn" data-lang="en">EN</button>
   </div>
-  <a href="about.html" data-i18n="nav.about">About</a>
-  <a href="index.html#services" data-i18n="nav.services">Our Services</a>
-  <a href="index.html#sectors" data-i18n="nav.sectors">Sectors</a>
-  <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
-  <a href="index.html#fab" data-i18n="nav.manufacturing">Manufacturing</a>
-  <a href="index.html#careers" data-i18n="nav.careers">Careers</a>
-  <a href="index.html#contact" style="color:var(--amber);margin-top:16px;" data-i18n="nav.contact.arrow">Contact Us →</a>
+  <a href="#cta" class="btn-pri" style="margin-top:16px;text-align:center;" data-i18n="nav_cta">Soumission</a>
 </nav>
 
-<!-- Mega Menus (same as homepage) -->
-<div class="mega" id="mega-services">
-  <div class="mega-box mega-services">
-    <div class="mega-wrap">
-      <div class="mega-side">
-        <div class="mega-side-label" data-i18n="mega.svc.label">Our<br>Services</div>
-        <p class="mega-side-desc" data-i18n="mega.svc.desc">Four core disciplines. Uncompromising quality since the 1990s.</p>
-      </div>
-      <div class="mega-content">
-        <div class="mega-svc-grid">
-          <a href="index.html#services" class="msvc"><span class="msvc-icon">⚙️</span><span class="msvc-title" data-i18n="mega.svc1.title">Industrial Mechanics</span><p class="msvc-desc" data-i18n="mega.svc1.desc">Installation, maintenance and repair of industrial mechanical equipment across all major sectors.</p></a>
-          <a href="index.html#services" class="msvc"><span class="msvc-icon">🔧</span><span class="msvc-title" data-i18n="mega.svc2.title">Piping</span><p class="msvc-desc" data-i18n="mega.svc2.desc">Complete piping systems in carbon steel, stainless steel, and specialty alloys for process industries.</p></a>
-          <a href="index.html#services" class="msvc"><span class="msvc-icon">🔥</span><span class="msvc-title" data-i18n="mega.svc3.title">Welding</span><p class="msvc-desc" data-i18n="mega.svc3.desc">Certified welding including MIG, TIG, SMAW and specialized processes with X-ray testing capability.</p></a>
-          <a href="index.html#services" class="msvc"><span class="msvc-icon">🏗️</span><span class="msvc-title" data-i18n="mega.svc4.title">Boilermaking</span><p class="msvc-desc" data-i18n="mega.svc4.desc">Fabrication and installation of tanks, pressure vessels, hoppers, silos and structural steel.</p></a>
-        </div>
-      </div>
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <img class="hero-bg" src="https://picsum.photos/seed/industrialnight/1920/1080" alt="Oslo Construction chantier" loading="eager">
+  <div class="hero-ov1"></div>
+  <div class="hero-ov2"></div>
+  <div class="hero-ghost-year">1990</div>
+  <div class="hero-cnt">
+    <div class="hero-eyebrow" data-i18n="hero_eyebrow">Est. Années 90 &nbsp;·&nbsp; Québec, Canada</div>
+    <h1 class="hero-h1">
+      <span data-i18n="hero_h1_1">Notre</span>
+      <span class="line2" data-i18n="hero_h1_2">Histoire</span>
+    </h1>
+    <div class="hero-sep"></div>
+    <p class="hero-sub" data-i18n="hero_sub">
+      Depuis les années 90, bâtir des ponts entre l'ambition industrielle et l'excellence humaine — un chantier, une confiance à la fois.
+    </p>
+    <div class="hero-btns">
+      <a href="#history" class="btn-pri" data-i18n="hero_btn1">Découvrir notre parcours</a>
+      <a href="#cta" class="btn-ghost" data-i18n="hero_btn2">Nous contacter</a>
     </div>
   </div>
-</div>
+  <div class="hero-scroll-indicator">
+    <span data-i18n="hero_scroll">Défiler</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
 
-<div class="mega" id="mega-sectors">
-  <div class="mega-box mega-sectors">
-    <div class="mega-wrap">
-      <div class="mega-side">
-        <div class="mega-side-label" data-i18n="mega.sec.label">10+<br>Sectors</div>
-        <p class="mega-side-desc" data-i18n="mega.sec.desc">Serving diverse heavy industries across Quebec and beyond.</p>
-      </div>
-      <div class="mega-content">
-        <div class="mega-sec-grid">
-          <a href="index.html#sectors" class="msec"><span class="msec-dot"></span><span class="msec-name" data-i18n="sec1.title">Steel Mills</span></a>
-          <a href="index.html#sectors" class="msec"><span class="msec-dot"></span><span class="msec-name" data-i18n="sec2.title">Aerospace</span></a>
-          <a href="index.html#sectors" class="msec"><span class="msec-dot"></span><span class="msec-name" data-i18n="sec3.title">Food Processing</span></a>
-          <a href="index.html#sectors" class="msec"><span class="msec-dot"></span><span class="msec-name" data-i18n="sec4.title">Cement</span></a>
-          <a href="index.html#sectors" class="msec"><span class="msec-dot"></span><span class="msec-name" data-i18n="sec5.title">Energy</span></a>
-          <a href="index.html#sectors" class="msec"><span class="msec-dot"></span><span class="msec-name" data-i18n="sec6.title">Printing</span></a>
-          <a href="index.html#sectors" class="msec"><span class="msec-dot"></span><span class="msec-name" data-i18n="sec7.title">Manufacturing</span></a>
-          <a href="index.html#sectors" class="msec"><span class="msec-dot"></span><span class="msec-name" data-i18n="sec8.title">Mines &amp; Quarries</span></a>
-          <a href="index.html#sectors" class="msec"><span class="msec-dot"></span><span class="msec-name" data-i18n="sec9.title">Light Metals</span></a>
-          <a href="index.html#sectors" class="msec"><span class="msec-dot"></span><span class="msec-name" data-i18n="sec10.title">Pulp &amp; Paper</span></a>
-        </div>
-      </div>
+<!-- ══ STATS BAR ══ -->
+<section id="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item rv">
+      <span class="stat-n" data-count="30">30+</span>
+      <span class="stat-l" data-i18n="stat1">Ans d'expérience</span>
     </div>
-  </div>
-</div>
-
-<div class="mega" id="mega-projects">
-  <div class="mega-box mega-projects">
-    <div class="mega-wrap" style="padding-top:32px;padding-bottom:32px;">
-      <div class="mega-proj-grid">
-        <a href="index.html#projects" class="mproj"><span class="mproj-icon">🏭</span><div class="mproj-title" data-i18n="mega.proj1">Light Metals</div></a>
-        <a href="index.html#projects" class="mproj"><span class="mproj-icon">⛏️</span><div class="mproj-title" data-i18n="mega.proj2">Steel, Mining &amp; Metallurgy</div></a>
-        <a href="index.html#projects" class="mproj"><span class="mproj-icon">💧</span><div class="mproj-title" data-i18n="mega.proj3">Hydroelectricity</div></a>
-        <a href="index.html#projects" class="mproj"><span class="mproj-icon">📰</span><div class="mproj-title" data-i18n="mega.proj4">Pulp &amp; Paper</div></a>
-        <a href="index.html#projects" class="mproj"><span class="mproj-icon">🌾</span><div class="mproj-title" data-i18n="mega.proj5">Agribusiness</div></a>
-        <a href="index.html#projects" class="mproj"><span class="mproj-icon">🔩</span><div class="mproj-title" data-i18n="mega.proj6">Other Sectors</div></a>
-      </div>
+    <div class="stat-item rv rv1">
+      <span class="stat-n" data-count="500">500+</span>
+      <span class="stat-l" data-i18n="stat2">Projets réalisés</span>
     </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════
-     HERO — SPLIT EDITORIAL
-══════════════════════════════════ -->
-<section id="ab-hero">
-  <!-- Left: Type -->
-  <div class="ab-hero-left">
-    <div class="ab-eyebrow" data-i18n="ab.hero.eyebrow">Our Story · Notre histoire</div>
-    <h1 class="ab-hero-h1"><em data-i18n="ab.hero.h1.em">30 Years</em><span data-i18n="ab.hero.h1.main">of Trust<br>Built Hard</span></h1>
-    <p class="ab-hero-sub" data-i18n="ab.hero.sub">From a bold start in the 1990s to becoming one of Quebec's leading industrial contractors — our growth was earned, not given.</p>
-    <div class="ab-hero-btns">
-      <a href="#ab-history" class="btn-pri" data-i18n="ab.hero.btn1">Our History</a>
-      <a href="index.html#contact" class="btn-ghost" data-i18n="ab.hero.btn2">Work With Us</a>
+    <div class="stat-item rv rv2">
+      <span class="stat-n">4</span>
+      <span class="stat-l" data-i18n="stat3">Corps de métiers</span>
     </div>
-    <div class="ab-counter-strip">
-      <div class="ab-count">
-        <div class="ab-count-n">30+</div>
-        <div class="ab-count-l" data-i18n="ab.cnt1">Years Active</div>
-      </div>
-      <div class="ab-count">
-        <div class="ab-count-n">10+</div>
-        <div class="ab-count-l" data-i18n="ab.cnt2">Industries</div>
-      </div>
-      <div class="ab-count">
-        <div class="ab-count-n">100%</div>
-        <div class="ab-count-l" data-i18n="ab.cnt3">SSE Focused</div>
-      </div>
-    </div>
-  </div>
-  <!-- Right: Image -->
-  <div class="ab-hero-right">
-    <img class="ab-hero-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Oslo Construction industrial team at work">
-    <div class="ab-hero-rgrad"></div>
-    <div class="ab-hero-quote">
-      <p class="ab-hero-quote-text" data-i18n="ab.hero.quote">"Our growth is not the result of chance — it is the result of meticulous work by a dedicated team who earned the trust of our clients."</p>
+    <div class="stat-item rv rv3">
+      <span class="stat-n">ISO</span>
+      <span class="stat-l" data-i18n="stat4">9001 : 2008 Certifié</span>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     HISTORY — CINEMATIC EDITORIAL
-══════════════════════════════════ -->
-<section id="ab-history">
-  <div class="history-intro">
+<!-- ══ HISTORY ══ -->
+<section id="history">
+  <div class="history-ghost">30+</div>
+  <div class="sec-in">
+    <div class="chapter-label rv">
+      <span class="chapter-num">01</span>
+      <span class="chapter-name" data-i18n="ch1_label">Notre Histoire · Our Story</span>
+    </div>
+    <div class="history-top">
+      <div class="history-text-side">
+        <h2 class="history-h rv">
+          <span data-i18n="history_h1">Bâtie sur la confiance,</span><br>
+          <em data-i18n="history_h2">forgée dans l'acier.</em>
+        </h2>
+        <p class="history-body rv rv1" data-i18n="history_p1">
+          Il y avait quelque chose de différent chez Oslo dès le début. Dans les années 90, alors que le Québec industriel traversait une période de transformation profonde, une équipe de bâtisseurs a fondé une entreprise sur un principe simple mais exigeant : la confiance se mérite, projet par projet, chantier après chantier.
+        </p>
+        <p class="history-body rv rv2" data-i18n="history_p2">
+          Trois décennies plus tard, Oslo Construction s'est imposée comme l'une des compagnies les plus importantes dans le domaine de la mécanique industrielle au Québec. Cette croissance n'est pas le fruit du hasard — elle est le résultat d'un travail minutieux et d'une équipe de gestionnaires dévoués qui ont su gagner la confiance durable de leurs clients.
+        </p>
+        <p class="history-body rv rv3" data-i18n="history_p3">
+          Aujourd'hui, notre clientèle nous choisit systématiquement pour soumissionner sur leurs futurs projets. C'est cette confiance répétée qui est notre plus grande fierté.
+        </p>
+        <div class="history-years-badge rv rv4">
+          <span class="hbadge-n" data-count="30">30</span>
+          <span class="hbadge-l" data-i18n="years_label">+ années<br>d'excellence</span>
+        </div>
+      </div>
+      <div class="history-img-side rv rv2">
+        <div class="history-img-decor"></div>
+        <div class="history-img-wrap">
+          <img src="https://picsum.photos/seed/industrialfactory90/900/700" alt="Oslo Construction — chantier industriel">
+          <div class="history-img-ov"></div>
+          <div class="history-img-ov2"></div>
+          <div class="history-img-caption">
+            <span class="history-img-cap-text" data-i18n="img_caption">Mécanique industrielle · Québec</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pull Quote -->
+  <div class="pull-quote-section">
     <div class="sec-in">
-      <div class="history-text-col rv">
-        <div class="sec-tag" data-i18n="ab.hist.tag">Since the 1990s</div>
-        <h2 class="sec-h" data-i18n="ab.hist.h">A Story of<br>Earned Growth</h2>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start;margin-top:40px;">
-        <div class="history-body rv rv1">
-          <p data-i18n="ab.hist.body1">Since its founding in the 1990s, Oslo Construction has steadily grown into one of the most important companies in industrial mechanics in Quebec. Our growth is not the result of chance — it is the fruit of meticulous, deliberate work by a team of devoted managers who, day after day, earned the trust of their clients.</p>
-          <p data-i18n="ab.hist.body2">So much so that today, our clients choose us to bid on every future project that requires our expertise. Over recent years, Oslo Construction has stood out by working regularly with Canada's largest companies.</p>
-        </div>
-        <div class="history-pull-wrap rv rv2">
-          <div class="history-pull" data-i18n="ab.hist.pull">Forged<br>in Steel.<br>Built on<br>Trust.</div>
-          <p class="history-pull-sub" data-i18n="ab.hist.pull.sub">Three decades of industrial excellence in the heart of Quebec.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Timeline -->
-  <div class="history-timeline" style="margin-top:80px;">
-    <div class="timeline-line"></div>
-    <div class="timeline-items">
-
-      <!-- Era 1 -->
-      <div class="tl-item rv">
-        <div class="tl-content">
-          <span class="tl-era">1990</span>
-          <h3 class="tl-title" data-i18n="tl1.title">The Beginning</h3>
-          <p class="tl-body" data-i18n="tl1.body">Oslo Construction is founded in Terrebonne, Quebec, with a clear mission: deliver industrial mechanical work with uncompromising craftsmanship. A small but determined team lays the foundation of what will become one of the province's most trusted names in heavy industry.</p>
-        </div>
-        <div class="tl-img">
-          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80" alt="Industrial construction early days" loading="lazy">
-          <div class="tl-img-ov"></div>
-        </div>
-        <div class="tl-dot"></div>
-      </div>
-
-      <!-- Era 2 -->
-      <div class="tl-item rv rv1">
-        <div class="tl-img">
-          <img src="https://images.unsplash.com/photo-1565689157206-0fddef7589a2?auto=format&fit=crop&w=900&q=80" alt="Industrial workers on site" loading="lazy">
-          <div class="tl-img-ov"></div>
-        </div>
-        <div class="tl-content">
-          <span class="tl-era">2000</span>
-          <h3 class="tl-title" data-i18n="tl2.title">Building Partnerships</h3>
-          <p class="tl-body" data-i18n="tl2.body">A decade in, our reputation speaks for itself. Oslo earns the trust of Quebec's most demanding industrial clients — securing recurring contracts with leaders like Pratt &amp; Whitney, ArcelorMittal, Kruger, Bombardier and Rio Tinto Alcan. Our proactive management philosophy becomes our calling card.</p>
-        </div>
-        <div class="tl-dot"></div>
-      </div>
-
-      <!-- Era 3 -->
-      <div class="tl-item rv rv2">
-        <div class="tl-content">
-          <span class="tl-era">TODAY</span>
-          <h3 class="tl-title" data-i18n="tl3.title">A Name They Call First</h3>
-          <p class="tl-body" data-i18n="tl3.body">Today, our clients don't just keep us on their roster — they choose Oslo to bid on every future project that demands our expertise. SNC-Lavalin, Hydro-Québec, and Canada's top industrial companies choose us not because we're convenient, but because we deliver.</p>
-        </div>
-        <div class="tl-img">
-          <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=900&q=80" alt="Modern industrial facility" loading="lazy">
-          <div class="tl-img-ov"></div>
-        </div>
-        <div class="tl-dot"></div>
-      </div>
-
+      <p class="pull-quote rv">
+        <span data-i18n="pull1">"Tant et si bien qu'aujourd'hui, notre clientèle nous choisit pour soumissionner sur <em>tous</em> leurs futurs projets."</span>
+      </p>
+      <p class="pull-quote-attr rv rv1" data-i18n="pull1_attr">— Oslo Construction, depuis les années 90</p>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     CLIENTS — MARQUEE STRIP
-══════════════════════════════════ -->
-<div id="ab-clients">
-  <div class="clients-label" data-i18n="ab.clients.label">Trusted by Canada's Largest Industrial Companies</div>
-  <div class="marquee-track">
-    <div class="marquee-inner" aria-hidden="true">
-      <!-- Set 1 -->
-      <span class="client-name">Pratt &amp; Whitney</span>
-      <span class="client-name">ArcelorMittal</span>
-      <span class="client-name">Kruger</span>
-      <span class="client-name">Bombardier</span>
-      <span class="client-name">Rio Tinto Alcan</span>
-      <span class="client-name">SNC-Lavalin</span>
-      <span class="client-name">Hydro-Québec</span>
-      <!-- Set 2 (duplicate for seamless loop) -->
-      <span class="client-name">Pratt &amp; Whitney</span>
-      <span class="client-name">ArcelorMittal</span>
-      <span class="client-name">Kruger</span>
-      <span class="client-name">Bombardier</span>
-      <span class="client-name">Rio Tinto Alcan</span>
-      <span class="client-name">SNC-Lavalin</span>
-      <span class="client-name">Hydro-Québec</span>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════
-     EXPERTISE — WHAT WE DO
-══════════════════════════════════ -->
-<section id="ab-expertise">
-  <div class="expertise-grid">
-    <div class="expertise-img rv">
-      <img src="https://images.unsplash.com/photo-1504615755583-2916b52192a3?auto=format&fit=crop&w=1000&q=80" alt="Industrial mechanics at work in a plant" loading="lazy">
-      <div class="expertise-img-ov"></div>
-      <div class="expertise-img-ov2"></div>
-    </div>
-    <div class="expertise-text rv rv1">
-      <div class="sec-tag" data-i18n="ab.exp.tag">Our Expertise</div>
-      <h2 class="sec-h" data-i18n="ab.exp.h">Specialists in<br>Industrial<br>Mechanics</h2>
-      <p class="expertise-body" data-i18n="ab.exp.body1">Oslo Construction is specialized in the execution of industrial mechanical projects. We also carry out the annual maintenance work required in a plant — because we understand that uptime is everything in heavy industry.</p>
-      <p class="expertise-body" data-i18n="ab.exp.body2">Oslo stands out above all through its management of SSE (Health, Safety &amp; Environment), maintaining a competitive price, a proven quality of service, and all within the respect of deadlines.</p>
-      <p class="expertise-body" data-i18n="ab.exp.body3">Our services are adapted to the needs of our clients — whether they are operating owners, consulting engineers, or equipment suppliers — in order to maintain the best possible quality control.</p>
-      <div class="exp-tags">
-        <span class="exp-tag" data-i18n="ab.exp.tag1">Industrial Mechanics</span>
-        <span class="exp-tag" data-i18n="ab.exp.tag2">Piping</span>
-        <span class="exp-tag" data-i18n="ab.exp.tag3">Boilermaking</span>
-        <span class="exp-tag" data-i18n="ab.exp.tag4">Steel Structure</span>
-        <span class="exp-tag" data-i18n="ab.exp.tag5">Plant Maintenance</span>
-        <span class="exp-tag" data-i18n="ab.exp.tag6">Shutdowns</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════
-     TRADES — 4 DISCIPLINES
-══════════════════════════════════ -->
-<section id="ab-trades">
+<!-- ══ CLIENTS WALL ══ -->
+<section id="clients">
   <div class="sec-in">
-    <div class="rv"><div class="sec-tag" data-i18n="ab.trades.tag">On the Job Site</div></div>
-    <h2 class="sec-h rv rv1" data-i18n="ab.trades.h">Four Trades.<br>One Team.</h2>
-    <p class="rv rv2" style="font-size:17px;font-weight:300;color:rgba(240,237,232,.6);max-width:580px;line-height:1.7;margin-bottom:0;" data-i18n="ab.trades.sub">At the heart of every Oslo job site are four core trades. We have the resources to assemble multidisciplinary teams for any type of project.</p>
+    <div class="chapter-label rv">
+      <span class="chapter-num">02</span>
+      <span class="chapter-name" data-i18n="ch2_label">Ils nous font confiance · They trust us</span>
+    </div>
+    <h2 class="rv" style="font-family:'Bebas Neue',cursive;font-size:clamp(40px,4.5vw,72px);line-height:1;margin-bottom:16px;" data-i18n="clients_h">Nos Partenaires Industriels</h2>
+    <p class="rv rv1" style="font-size:16px;font-weight:300;color:rgba(240,237,232,.55);max-width:540px;line-height:1.72;margin-bottom:0;" data-i18n="clients_sub">Les plus grandes entreprises canadiennes nous font confiance de façon régulière pour leurs projets industriels les plus exigeants.</p>
   </div>
-  <div class="trades-grid" style="margin-top:56px;">
-    <!-- Mécaniciens de chantier -->
-    <a href="index.html#services" class="trade-card rv">
-      <div class="trade-bg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80');"></div>
-      <div class="trade-ov"></div>
-      <div class="trade-color-band"></div>
-      <div class="trade-cnt">
-        <span class="trade-num">01</span>
-        <div class="trade-ico">⚙️</div>
-        <h3 class="trade-title" data-i18n="ab.trade1.title">Field Mechanics</h3>
-        <p class="trade-desc" data-i18n="ab.trade1.desc">Mécaniciens de chantier — the backbone of any industrial installation. They handle the installation, alignment, and commissioning of the most complex machinery.</p>
+  <div style="max-width:1320px;margin:56px auto 0;padding:0 48px;">
+    <div class="clients-grid rv">
+      <div class="client-item lg">
+        <span class="client-name">Pratt &amp; Whitney</span>
+        <span class="client-sector" data-i18n="sec_aero">Aérospatiale</span>
       </div>
-    </a>
-    <!-- Chaudronniers -->
-    <a href="index.html#services" class="trade-card rv rv1">
-      <div class="trade-bg" style="background-image:url('https://images.unsplash.com/photo-1495592822108-9e6261896da8?auto=format&fit=crop&w=900&q=80');"></div>
-      <div class="trade-ov"></div>
-      <div class="trade-color-band"></div>
-      <div class="trade-cnt">
-        <span class="trade-num">02</span>
-        <div class="trade-ico">🔥</div>
-        <h3 class="trade-title" data-i18n="ab.trade2.title">Boilermakers</h3>
-        <p class="trade-desc" data-i18n="ab.trade2.desc">Chaudronniers — masters of metal. Fabricating and assembling pressure vessels, tanks, silos, and structural components with certified precision.</p>
+      <div class="client-item md">
+        <span class="client-name">ArcelorMittal</span>
+        <span class="client-sector" data-i18n="sec_steel">Sidérurgie</span>
       </div>
-    </a>
-    <!-- Monteurs de structure d'acier -->
-    <a href="index.html#services" class="trade-card rv rv2">
-      <div class="trade-bg" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80');"></div>
-      <div class="trade-ov"></div>
-      <div class="trade-color-band"></div>
-      <div class="trade-cnt">
-        <span class="trade-num">03</span>
-        <div class="trade-ico">🏗️</div>
-        <h3 class="trade-title" data-i18n="ab.trade3.title">Steel Erectors</h3>
-        <p class="trade-desc" data-i18n="ab.trade3.desc">Monteurs de structure d'acier — building the skeleton of industry. From platforms and walkways to complete structural steel frameworks.</p>
+      <div class="client-item md">
+        <span class="client-name">Bombardier</span>
+        <span class="client-sector" data-i18n="sec_transport">Transport</span>
       </div>
-    </a>
-    <!-- Tuyauteurs -->
-    <a href="index.html#services" class="trade-card rv rv3">
-      <div class="trade-bg" style="background-image:url('https://images.unsplash.com/photo-1565161883489-27a3b7cd7606?auto=format&fit=crop&w=900&q=80');"></div>
-      <div class="trade-ov"></div>
-      <div class="trade-color-band"></div>
-      <div class="trade-cnt">
-        <span class="trade-num">04</span>
-        <div class="trade-ico">🔧</div>
-        <h3 class="trade-title" data-i18n="ab.trade4.title">Pipefitters</h3>
-        <p class="trade-desc" data-i18n="ab.trade4.desc">Tuyauteurs — the arteries of an industrial plant. From carbon steel to stainless alloys, they design, fabricate, and install complex process piping networks.</p>
+      <div class="client-item sm">
+        <span class="client-name">Kruger</span>
+        <span class="client-sector" data-i18n="sec_paper">Papier &amp; Emballage</span>
       </div>
-    </a>
+      <div class="client-item lg">
+        <span class="client-name">Hydro-Québec</span>
+        <span class="client-sector" data-i18n="sec_energy">Énergie</span>
+      </div>
+      <div class="client-item sm">
+        <span class="client-name">Rio Tinto Alcan</span>
+        <span class="client-sector" data-i18n="sec_mining">Aluminium &amp; Mines</span>
+      </div>
+      <div class="client-item md">
+        <span class="client-name">SNC-Lavalin</span>
+        <span class="client-sector" data-i18n="sec_eng">Ingénierie</span>
+      </div>
+      <div class="client-item sm" style="grid-column:span 2;">
+        <span class="client-name" style="font-size:28px;">+ Bien d'autres partenaires industriels à travers le Canada</span>
+        <span class="client-sector" data-i18n="sec_more">Partout au Canada</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     MANAGEMENT — THE PYRAMID
-══════════════════════════════════ -->
-<section id="ab-mgmt">
+<!-- ══ DISCIPLINES ══ -->
+<section id="disciplines">
   <div class="sec-in">
-    <div class="mgmt-grid">
-      <div class="mgmt-text-col">
-        <div class="sec-tag rv" data-i18n="ab.mgmt.tag">Our Philosophy</div>
-        <h2 class="sec-h rv rv1" data-i18n="ab.mgmt.h">Proactive<br>Management</h2>
-        <div class="mgmt-body rv rv2">
-          <p data-i18n="ab.mgmt.body1">We apply our "proactive" management philosophy to all of our projects — whether they involve plant shutdowns, maintenance work, or long-term capital projects. To ensure optimal management of every project, Oslo Construction adheres to three principles represented by the pyramid.</p>
-          <p data-i18n="ab.mgmt.body2">At the base of all our concerns: Health, Safety &amp; Environment. The body of the pyramid represents the budget we work within and must respect — bounded by quality control on one side and schedule compliance on the other.</p>
+    <div class="chapter-label rv">
+      <span class="chapter-num">03</span>
+      <span class="chapter-name" data-i18n="ch3_label">Nos Corps de Métiers · Our Trades</span>
+    </div>
+    <h2 class="rv" style="font-family:'Bebas Neue',cursive;font-size:clamp(40px,4.5vw,72px);line-height:1;margin-bottom:16px;" data-i18n="disc_h">L'Excellence à Chaque Poste</h2>
+    <p class="rv rv1" style="font-size:16px;font-weight:300;color:rgba(240,237,232,.55);max-width:560px;line-height:1.72;" data-i18n="disc_sub">Sur un chantier, l'activité d'Oslo Construction repose sur quatre corps de métiers spécialisés, réunis en équipes multidisciplinaires.</p>
+  </div>
+  <div style="max-width:1320px;margin:56px auto 0;padding:0 48px;">
+    <div class="disc-grid">
+      <div class="disc-row rv">
+        <div class="disc-num-col"><span class="disc-num">01</span></div>
+        <div class="disc-text-col">
+          <div class="disc-title" data-i18n="disc1_title">Mécaniciens de Chantier</div>
+          <p class="disc-body" data-i18n="disc1_body">Spécialistes de l'installation, du montage et de la mise en service d'équipements industriels lourds. Piliers de chaque intervention en usine, leur expertise garantit la fiabilité des systèmes mécaniques les plus complexes.</p>
+          <span class="disc-tag" data-i18n="disc1_tag">Mécanique industrielle</span>
         </div>
-        <!-- Values list on left -->
-        <div class="rv rv3" style="margin-top:8px;">
-          <div class="sec-tag" style="margin-bottom:12px;" data-i18n="ab.mgmt.vals.tag">Core Values</div>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:0;">
-            <li style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:14.5px;color:rgba(240,237,232,.72);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--grad);flex-shrink:0;"></span><span data-i18n="mgmt.v1">Competent, skilled personnel</span>
-            </li>
-            <li style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:14.5px;color:rgba(240,237,232,.72);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--grad);flex-shrink:0;"></span><span data-i18n="mgmt.v2">Respect for partnership</span>
-            </li>
-            <li style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:14.5px;color:rgba(240,237,232,.72);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--grad);flex-shrink:0;"></span><span data-i18n="mgmt.v3">A safe and motivating workplace</span>
-            </li>
-            <li style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:14.5px;color:rgba(240,237,232,.72);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--grad);flex-shrink:0;"></span><span data-i18n="mgmt.v4">Rigorous budget monitoring</span>
-            </li>
-            <li style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:14.5px;color:rgba(240,237,232,.72);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--grad);flex-shrink:0;"></span><span data-i18n="mgmt.v5">Respect of deadlines</span>
-            </li>
-            <li style="display:flex;align-items:center;gap:12px;padding:12px 0;font-size:14.5px;color:rgba(240,237,232,.72);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--grad);flex-shrink:0;"></span><span data-i18n="mgmt.v6">ISO 9001:2008 quality standards</span>
-            </li>
-          </ul>
+        <div class="disc-img-col">
+          <img src="https://picsum.photos/seed/mechworker1/800/400" alt="Mécaniciens de chantier">
         </div>
       </div>
-
-      <!-- Pyramid visualization -->
-      <div class="rv rv2" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
-        <div class="pyramid-wrap">
-          <!-- Apex: SSE -->
-          <div style="position:relative;margin-bottom:0;">
-            <div style="width:0;height:0;border-left:90px solid transparent;border-right:90px solid transparent;border-bottom:100px solid #e5943e;position:relative;">
-              <div style="position:absolute;top:40px;left:-60px;width:120px;text-align:center;">
-                <div style="font-family:'Bebas Neue',cursive;font-size:22px;color:#fff;letter-spacing:.08em;line-height:1;">SSE</div>
-                <div style="font-family:'Barlow Condensed',sans-serif;font-size:8.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);">Foundation</div>
-              </div>
-            </div>
-          </div>
-          <!-- Middle: Budget -->
-          <div style="position:relative;margin-bottom:0;">
-            <div style="width:0;height:0;border-left:145px solid transparent;border-right:145px solid transparent;border-bottom:95px solid rgba(229,148,62,.65);position:relative;">
-              <div style="position:absolute;top:36px;left:-100px;width:200px;text-align:center;">
-                <div style="font-family:'Bebas Neue',cursive;font-size:20px;color:#fff;letter-spacing:.06em;line-height:1;" data-i18n="pyr.budget">BUDGET</div>
-              </div>
-            </div>
-          </div>
-          <!-- Base: Quality | Schedule -->
-          <div style="position:relative;margin-bottom:0;">
-            <div style="width:0;height:0;border-left:210px solid transparent;border-right:210px solid transparent;border-bottom:100px solid rgba(181,70,56,.55);position:relative;">
-              <div style="position:absolute;top:32px;left:-160px;width:320px;text-align:center;display:flex;justify-content:space-around;">
-                <div style="font-family:'Bebas Neue',cursive;font-size:16px;color:#fff;letter-spacing:.06em;line-height:1.2;" data-i18n="pyr.quality">QUALITY<br>CONTROL</div>
-                <div style="width:1px;background:rgba(255,255,255,.2);margin:4px 0;"></div>
-                <div style="font-family:'Bebas Neue',cursive;font-size:16px;color:#fff;letter-spacing:.06em;line-height:1.2;" data-i18n="pyr.schedule">SCHEDULE<br>COMPLIANCE</div>
-              </div>
-            </div>
-          </div>
-          <!-- Base line -->
-          <div style="width:420px;height:4px;background:var(--amber);border-radius:2px;box-shadow:0 0 20px rgba(229,148,62,.4);"></div>
-          <!-- Labels -->
-          <div style="width:420px;display:flex;justify-content:space-between;margin-top:18px;padding:0 12px;">
-            <div style="text-align:center;">
-              <div style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);" data-i18n="pyr.lbl1">Health &amp; Safety</div>
-            </div>
-            <div style="text-align:center;">
-              <div style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);" data-i18n="pyr.lbl2">Environment</div>
-            </div>
-          </div>
-          <p style="font-size:13px;color:var(--muted);text-align:center;max-width:340px;margin-top:20px;line-height:1.6;" data-i18n="pyr.caption">The Oslo pyramid — every project is built on SSE, shaped by budget, bounded by quality &amp; schedule.</p>
+      <div class="disc-row rv rv1">
+        <div class="disc-num-col"><span class="disc-num">02</span></div>
+        <div class="disc-text-col">
+          <div class="disc-title" data-i18n="disc2_title">Chaudronniers</div>
+          <p class="disc-body" data-i18n="disc2_body">Maîtres de la fabrication et de l'assemblage de pièces métalliques — réservoirs, cuves, échangeurs thermiques. Leur savoir-faire en soudage et en formage du métal est le fondement d'installations durables et sécuritaires.</p>
+          <span class="disc-tag" data-i18n="disc2_tag">Chaudronnerie &amp; soudage</span>
+        </div>
+        <div class="disc-img-col">
+          <img src="https://picsum.photos/seed/welderfire2/800/400" alt="Chaudronniers">
+        </div>
+      </div>
+      <div class="disc-row rv rv2">
+        <div class="disc-num-col"><span class="disc-num">03</span></div>
+        <div class="disc-text-col">
+          <div class="disc-title" data-i18n="disc3_title">Monteurs de Structure d'Acier</div>
+          <p class="disc-body" data-i18n="disc3_body">Architectes de l'acier, ils érigent les ossatures qui soutiennent les installations industrielles les plus ambitieuses. Du simple support à la charpente complexe, leur précision millimétrique garantit l'intégrité structurale de chaque ouvrage.</p>
+          <span class="disc-tag" data-i18n="disc3_tag">Structure métallique</span>
+        </div>
+        <div class="disc-img-col">
+          <img src="https://picsum.photos/seed/steelbeam3/800/400" alt="Monteurs d'acier">
+        </div>
+      </div>
+      <div class="disc-row rv rv3">
+        <div class="disc-num-col"><span class="disc-num">04</span></div>
+        <div class="disc-text-col">
+          <div class="disc-title" data-i18n="disc4_title">Tuyauteurs</div>
+          <p class="disc-body" data-i18n="disc4_body">Experts en installation et en assemblage de systèmes de tuyauterie industrielle — vapeur, procédé, utilité. Leur maîtrise des normes de l'industrie assure des réseaux étanches, sécuritaires et conformes aux exigences les plus strictes.</p>
+          <span class="disc-tag" data-i18n="disc4_tag">Tuyauterie industrielle</span>
+        </div>
+        <div class="disc-img-col">
+          <img src="https://picsum.photos/seed/pipework4/800/400" alt="Tuyauteurs">
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     VALUES & ISO
-══════════════════════════════════ -->
-<section id="ab-values">
+<!-- ══ EXPERTISE BAND ══ -->
+<section id="expertise-band">
+  <img class="expertise-band-bg" src="https://picsum.photos/seed/industrialpano/1920/600" alt="Oslo Construction expertise">
+  <div class="expertise-band-ov"></div>
+  <div class="expertise-band-ov2"></div>
+  <div class="sec-in" style="position:relative;z-index:2;width:100%;padding:100px 48px;">
+    <div class="expertise-band-cnt">
+      <div class="sec-tag rv" data-i18n="eb_tag">Notre expertise</div>
+      <h2 class="eb-h rv rv1" data-i18n="eb_h">Des équipes adaptées à chaque réalité.</h2>
+      <p class="eb-body rv rv2" data-i18n="eb_body">Oslo Construction possède les ressources pour réunir des équipes multidisciplinaires capables d'accomplir tous types de projets — travaux d'arrêt d'usine (shutdown), maintenance annuelle ou projets de longue durée. Nos services s'adaptent aux besoins des propriétaires opérants, des ingénieurs conseil et des fournisseurs d'équipements.</p>
+      <div class="eb-tags rv rv3">
+        <span class="eb-tag" data-i18n="eb_t1">Shutdown / Arrêt d'usine</span>
+        <span class="eb-tag" data-i18n="eb_t2">Maintenance annuelle</span>
+        <span class="eb-tag" data-i18n="eb_t3">Projets longue durée</span>
+        <span class="eb-tag" data-i18n="eb_t4">Contrôle qualité ISO 9001</span>
+        <span class="eb-tag" data-i18n="eb_t5">Gestion SSE proactive</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PHILOSOPHY / PYRAMID ══ -->
+<section id="philosophy">
   <div class="sec-in">
-    <div class="values-grid">
-      <div class="values-text-col">
-        <div class="sec-tag rv" data-i18n="ab.val.tag">What We Stand For</div>
-        <h2 class="sec-h rv rv1" data-i18n="ab.val.h">Our Values</h2>
-        <p class="values-body rv rv2" data-i18n="ab.val.body">Oslo Construction provides its clients with a safe installation and a level of quality that satisfies their requirements — as well as those of ISO 9001:2008 industry standards and codes.</p>
-        <ul class="values-list rv rv2">
-          <li class="val-item">
-            <div class="val-check"><svg viewBox="0 0 14 14"><polyline points="2,7 6,11 12,3"/></svg></div>
-            <div class="val-text"><span class="val-highlight" data-i18n="val1.t">Skilled Personnel</span><span data-i18n="val1.d">Competent trades on every project — licensed, certified, experienced.</span></div>
-          </li>
-          <li class="val-item">
-            <div class="val-check"><svg viewBox="0 0 14 14"><polyline points="2,7 6,11 12,3"/></svg></div>
-            <div class="val-text"><span class="val-highlight" data-i18n="val2.t">Respect for Partnership</span><span data-i18n="val2.d">We treat every client relationship as a long-term collaboration, not a transaction.</span></div>
-          </li>
-          <li class="val-item">
-            <div class="val-check"><svg viewBox="0 0 14 14"><polyline points="2,7 6,11 12,3"/></svg></div>
-            <div class="val-text"><span class="val-highlight" data-i18n="val3.t">Safe &amp; Motivating Environment</span><span data-i18n="val3.d">A workplace where our workers thrive — because safety and morale are never optional.</span></div>
-          </li>
-          <li class="val-item">
-            <div class="val-check"><svg viewBox="0 0 14 14"><polyline points="2,7 6,11 12,3"/></svg></div>
-            <div class="val-text"><span class="val-highlight" data-i18n="val4.t">Rigorous Budget Monitoring</span><span data-i18n="val4.d">Tight financial control on every contract — we protect your budget like it's our own.</span></div>
-          </li>
-          <li class="val-item">
-            <div class="val-check"><svg viewBox="0 0 14 14"><polyline points="2,7 6,11 12,3"/></svg></div>
-            <div class="val-text"><span class="val-highlight" data-i18n="val5.t">Deadline Compliance</span><span data-i18n="val5.d">In industrial work, a day lost costs more than money. We plan to deliver on time, every time.</span></div>
-          </li>
-          <li class="val-item">
-            <div class="val-check"><svg viewBox="0 0 14 14"><polyline points="2,7 6,11 12,3"/></svg></div>
-            <div class="val-text"><span class="val-highlight" data-i18n="val6.t">ISO 9001:2008 Quality</span><span data-i18n="val6.d">Installations that meet or exceed industry norms, codes, and client expectations.</span></div>
-          </li>
-        </ul>
-      </div>
-      <div class="values-img-col rv rv3">
-        <div class="val-img-wrap">
-          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80" alt="Oslo Construction quality work" loading="lazy">
-          <div class="val-badge">
-            <span class="val-badge-t">ISO</span>
-            <span class="val-badge-l">9001:2008<br>Certified</span>
+    <div class="chapter-label rv">
+      <span class="chapter-num">04</span>
+      <span class="chapter-name" data-i18n="ch4_label">Notre Philosophie · Our Philosophy</span>
+    </div>
+    <div class="philo-inner">
+      <div class="philo-text">
+        <h2 class="philo-h rv" data-i18n="philo_h">Une gestion proactive. Toujours.</h2>
+        <p class="philo-body rv rv1" data-i18n="philo_body">Nous appliquons notre philosophie de gestion "proactive" à tous nos projets. Pour assurer une gestion optimale, Oslo Construction respecte trois principes fondamentaux, représentés par notre logo pyramidal.</p>
+        <div class="philo-pillars">
+          <div class="pillar rv rv2">
+            <div class="pillar-icon">🛡️</div>
+            <div class="pillar-text-wrap">
+              <div class="pillar-title" data-i18n="pillar1_title">SSE — Santé, Sécurité, Environnement</div>
+              <div class="pillar-desc" data-i18n="pillar1_desc">La base absolue de toutes nos préoccupations. Aucun compromis, aucune exception.</div>
+            </div>
+          </div>
+          <div class="pillar rv rv3">
+            <div class="pillar-icon">📊</div>
+            <div class="pillar-text-wrap">
+              <div class="pillar-title" data-i18n="pillar2_title">Budget — Respect financier</div>
+              <div class="pillar-desc" data-i18n="pillar2_desc">Le corps de notre pyramide. Nous travaillons avec vos budgets et nous les respectons rigoureusement.</div>
+            </div>
+          </div>
+          <div class="pillar rv rv4">
+            <div class="pillar-icon">✅</div>
+            <div class="pillar-text-wrap">
+              <div class="pillar-title" data-i18n="pillar3_title">Qualité &amp; Échéanciers</div>
+              <div class="pillar-desc" data-i18n="pillar3_desc">Les deux faces de notre pyramide. Qualité éprouvée et respect absolu des délais convenus.</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════
-     CONTRACT TYPES
-══════════════════════════════════ -->
-<section id="ab-contracts">
-  <div class="sec-in">
-    <div class="rv"><div class="sec-tag" data-i18n="ab.contracts.tag">Flexible Engagements</div></div>
-    <h2 class="sec-h rv rv1" data-i18n="ab.contracts.h">Three Ways<br>to Work<br>With Us</h2>
-    <p class="rv rv2" style="font-size:17px;font-weight:300;color:rgba(240,237,232,.6);max-width:560px;line-height:1.7;margin-bottom:0;" data-i18n="ab.contracts.sub">To meet your specific needs, we offer the flexibility to manage contracts on a lump-sum, time &amp; material, or cost-plus basis.</p>
-    <div class="contracts-cards">
-      <div class="contract-card rv rv1">
-        <div class="cc-num">01</div>
-        <div class="cc-ico">📋</div>
-        <h3 class="cc-title" data-i18n="cc1.title">Lump Sum</h3>
-        <p class="cc-desc" data-i18n="cc1.desc">A fixed price for a defined scope of work. Maximum cost certainty for you — maximum accountability for us. Ideal for well-defined projects with clear specifications.</p>
-      </div>
-      <div class="contract-card rv rv2">
-        <div class="cc-num">02</div>
-        <div class="cc-ico">⏱️</div>
-        <h3 class="cc-title" data-i18n="cc2.title">Time &amp; Material</h3>
-        <p class="cc-desc" data-i18n="cc2.desc">Billed on actual labour hours and materials used. Best suited for maintenance work, shutdowns, and projects where scope evolves. Full transparency at every step.</p>
-      </div>
-      <div class="contract-card rv rv3">
-        <div class="cc-num">03</div>
-        <div class="cc-ico">📊</div>
-        <h3 class="cc-title" data-i18n="cc3.title">Cost-Plus</h3>
-        <p class="cc-desc" data-i18n="cc3.desc">Reimbursement of all project costs plus a fixed margin. An open-book approach for complex, long-duration projects where collaboration and trust are paramount.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════
-     CTA
-══════════════════════════════════ -->
-<section id="ab-cta">
-  <div class="ab-cta-bg"></div>
-  <div class="ab-cta-ov"></div>
-  <div class="ab-cta-cnt">
-    <div>
-      <h2 class="ab-cta-h" data-i18n="ab.cta.h">Let's Build<br>Something<br>Together</h2>
-      <p class="ab-cta-sub" data-i18n="ab.cta.sub">Ready to bring your next industrial project to life? Our team is standing by to discuss your needs, submit a competitive bid, and deliver results you can count on.</p>
-    </div>
-    <div class="ab-cta-actions">
-      <a href="index.html#contact" class="btn-wht" data-i18n="ab.cta.btn1">Contact Us</a>
-      <a href="index.html#services" class="btn-wht-ghost" data-i18n="ab.cta.btn2">Our Services</a>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════
-     FOOTER
-══════════════════════════════════ -->
-<footer>
-  <div class="ft-in">
-    <div class="ft-top">
-      <div class="ft-brand">
-        <a href="index.html" class="logo" style="margin-bottom:4px;display:inline-flex;">
-          <svg class="logo-svg" viewBox="0 0 44 44" fill="none">
-            <polygon points="22,4 40,38 4,38" fill="#b54638" opacity=".15"/>
-            <polygon points="22,4 36,38 22,38" fill="#b54638"/>
-            <polygon points="22,4 36,38 8,38" fill="#e5943e"/>
-            <polygon points="22,4 22,38 8,38" fill="#b54638" opacity=".7"/>
+      <div class="pyramid-side rv rv2">
+        <div class="pyramid-svg-wrap">
+          <svg viewBox="0 0 440 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="pyrAmber" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#e5943e"/><stop offset="1" stop-color="#f0a050"/>
+              </linearGradient>
+              <linearGradient id="pyrCrimson" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#b54638"/><stop offset="1" stop-color="#d05545"/>
+              </linearGradient>
+              <linearGradient id="pyrDark" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#3a2010"/><stop offset="1" stop-color="#5a2818"/>
+              </linearGradient>
+            </defs>
+            <!-- Base: SSE -->
+            <g class="pyr-seg">
+              <polygon points="40,340 400,340 330,250 110,250" fill="url(#pyrAmber)" opacity="0.9"/>
+              <text x="220" y="302" text-anchor="middle" class="pyr-label-main" fill="rgba(13,13,13,0.9)" font-family="'Bebas Neue',cursive" font-size="20" letter-spacing="3">SSE</text>
+              <text x="220" y="322" text-anchor="middle" class="pyr-label" fill="rgba(13,13,13,0.7)" font-family="'Barlow Condensed',sans-serif" font-size="11" letter-spacing="2">Santé · Sécurité · Environnement</text>
+            </g>
+            <!-- Middle: Budget -->
+            <g class="pyr-seg">
+              <polygon points="110,250 330,250 280,160 160,160" fill="url(#pyrCrimson)" opacity="0.85"/>
+              <text x="220" y="214" text-anchor="middle" class="pyr-label-main" fill="rgba(240,237,232,0.95)" font-family="'Bebas Neue',cursive" font-size="18" letter-spacing="2">BUDGET</text>
+            </g>
+            <!-- Top: Quality + Schedule -->
+            <g class="pyr-seg">
+              <polygon points="160,160 280,160 220,60" fill="url(#pyrDark)" opacity="0.95" stroke="rgba(229,148,62,0.4)" stroke-width="1"/>
+              <text x="220" y="120" text-anchor="middle" class="pyr-label-main" fill="rgba(229,148,62,0.95)" font-family="'Bebas Neue',cursive" font-size="13" letter-spacing="1">QUALITÉ</text>
+              <text x="220" y="138" text-anchor="middle" class="pyr-label-main" fill="rgba(229,148,62,0.95)" font-family="'Bebas Neue',cursive" font-size="13" letter-spacing="1">ÉCHÉANCIERS</text>
+            </g>
+            <!-- Outline -->
+            <polygon points="220,40 400,340 40,340" fill="none" stroke="rgba(229,148,62,0.25)" stroke-width="1.5"/>
+            <!-- Dividers -->
+            <line x1="110" y1="250" x2="330" y2="250" stroke="rgba(229,148,62,0.2)" stroke-width="1"/>
+            <line x1="160" y1="160" x2="280" y2="160" stroke="rgba(229,148,62,0.2)" stroke-width="1"/>
           </svg>
-          <div class="logo-text"><span class="logo-oslo">OSLO</span><span class="logo-construction">Construction</span></div>
-        </a>
-        <p data-i18n="ft.brand.desc">Industrial mechanics, piping, welding and boilermaking specialists serving Quebec's industrial sector since the 1990s.</p>
-      </div>
-      <div>
-        <div class="ft-col-t" data-i18n="ft.services.t">Services</div>
-        <ul class="ft-links">
-          <li><a href="index.html#services" data-i18n="svc1.name.flat">Industrial Mechanics</a></li>
-          <li><a href="index.html#services" data-i18n="svc2.name.flat">Piping</a></li>
-          <li><a href="index.html#services" data-i18n="svc3.name.flat">Welding</a></li>
-          <li><a href="index.html#services" data-i18n="svc4.name.flat">Boilermaking</a></li>
-          <li><a href="index.html#fab" data-i18n="ft.svc5">Fabrication Shop</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="ft-col-t" data-i18n="ft.sectors.t">Sectors</div>
-        <ul class="ft-links">
-          <li><a href="index.html#sectors" data-i18n="sec1.title">Steel Mills</a></li>
-          <li><a href="index.html#sectors" data-i18n="sec2.title">Aerospace</a></li>
-          <li><a href="index.html#sectors" data-i18n="sec3.title">Food Processing</a></li>
-          <li><a href="index.html#sectors" data-i18n="sec5.title">Energy</a></li>
-          <li><a href="index.html#sectors" data-i18n="sec8.title">Mines &amp; Quarries</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="ft-col-t" data-i18n="ft.company.t">Company</div>
-        <ul class="ft-links">
-          <li><a href="about.html" data-i18n="ft.comp1">About Oslo</a></li>
-          <li><a href="index.html#sse" data-i18n="ft.comp2">SSE Commitment</a></li>
-          <li><a href="index.html#projects" data-i18n="ft.comp3">Our Projects</a></li>
-          <li><a href="index.html#careers" data-i18n="nav.careers">Careers</a></li>
-          <li><a href="index.html#contact" data-i18n="nav.contact">Contact Us</a></li>
-        </ul>
+        </div>
+        <div class="pyramid-legend">
+          <div class="pleg-item">
+            <div class="pleg-dot" style="background:#e5943e;"></div>
+            <span class="pleg-text" data-i18n="pleg1">Base — SSE : Fondement absolu</span>
+          </div>
+          <div class="pleg-item">
+            <div class="pleg-dot" style="background:#b54638;"></div>
+            <span class="pleg-text" data-i18n="pleg2">Corps — Budget : Rigueur financière</span>
+          </div>
+          <div class="pleg-item">
+            <div class="pleg-dot" style="background:#3a2010;border:1px solid rgba(229,148,62,.4);"></div>
+            <span class="pleg-text" data-i18n="pleg3">Sommet — Qualité &amp; Échéanciers</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="ft-bot">
-      <div class="ft-copy" data-i18n="ft.copy">© 2025 Oslo Construction. All rights reserved. · 1099 rue Lévis, Terrebonne (QC)</div>
-      <div class="ft-social">
-        <a href="https://twitter.com/OSLOconstruc" class="soc" target="_blank" rel="noopener" aria-label="Twitter">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.733-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/company/2954031" class="soc" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
+  </div>
+</section>
+
+<!-- ══ VALUES ══ -->
+<section id="values">
+  <div class="sec-in">
+    <div class="chapter-label rv">
+      <span class="chapter-num">05</span>
+      <span class="chapter-name" data-i18n="ch5_label">Nos Valeurs · Our Values</span>
+    </div>
+    <h2 class="rv" style="font-family:'Bebas Neue',cursive;font-size:clamp(40px,4.5vw,72px);line-height:1;margin-bottom:16px;" data-i18n="values_h">Ce qui nous définit</h2>
+    <p class="rv rv1" style="font-size:16px;font-weight:300;color:rgba(240,237,232,.55);max-width:520px;line-height:1.72;margin-bottom:0;" data-i18n="values_sub">Les principes qui guident chaque décision, chaque jour, sur chaque chantier.</p>
+  </div>
+  <div style="max-width:1320px;margin:56px auto 0;padding:0 48px;">
+    <div class="values-grid">
+      <div class="val-item rv">
+        <span class="val-ord">01</span>
+        <div class="val-text">
+          <div class="val-title" data-i18n="val1_title">Personnel Compétent</div>
+          <div class="val-desc" data-i18n="val1_desc">Des équipes qualifiées, formées et engagées — notre capital humain est notre avantage concurrentiel le plus précieux.</div>
+        </div>
+      </div>
+      <div class="val-item rv rv1">
+        <span class="val-ord">02</span>
+        <div class="val-text">
+          <div class="val-title" data-i18n="val2_title">Respect du Partenariat</div>
+          <div class="val-desc" data-i18n="val2_desc">Nous construisons des relations durables fondées sur l'honnêteté, la transparence et le respect mutuel.</div>
+        </div>
+      </div>
+      <div class="val-item rv rv2">
+        <span class="val-ord">03</span>
+        <div class="val-text">
+          <div class="val-title" data-i18n="val3_title">Milieu de Travail Sécuritaire</div>
+          <div class="val-desc" data-i18n="val3_desc">Un environnement sécuritaire et motivant pour nos travailleurs est non négociable — c'est notre responsabilité fondamentale.</div>
+        </div>
+      </div>
+      <div class="val-item rv rv3">
+        <span class="val-ord">04</span>
+        <div class="val-text">
+          <div class="val-title" data-i18n="val4_title">Suivi Rigoureux des Budgets</div>
+          <div class="val-desc" data-i18n="val4_desc">La rigueur financière est un signe de respect envers nos clients. Nous gérons votre argent comme s'il était le nôtre.</div>
+        </div>
+      </div>
+      <div class="val-item rv rv4">
+        <span class="val-ord">05</span>
+        <div class="val-text">
+          <div class="val-title" data-i18n="val5_title">Respect des Échéanciers</div>
+          <div class="val-desc" data-i18n="val5_desc">Livrer à temps n'est pas un objectif — c'est notre standard. Chaque délai respecté est une promesse tenue.</div>
+        </div>
+      </div>
+      <div class="val-item rv rv5">
+        <span class="val-ord">06</span>
+        <div class="val-text">
+          <div class="val-title" data-i18n="val6_title">Qualité ISO 9001 : 2008</div>
+          <div class="val-desc" data-i18n="val6_desc">Fournir des installations sûres répondant aux exigences de nos clients et aux normes les plus strictes de l'industrie.</div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ══ CONTRACT TYPES ══ -->
+<section id="contracts">
+  <div class="sec-in">
+    <div class="sec-tag rv" data-i18n="contracts_tag">Modes de gestion · Contract models</div>
+    <h2 class="rv rv1" style="font-family:'Bebas Neue',cursive;font-size:clamp(40px,4.5vw,72px);line-height:1;margin-bottom:12px;" data-i18n="contracts_h">Vos contrats, à votre façon.</h2>
+    <p class="rv rv2" style="font-size:16px;font-weight:300;color:rgba(240,237,232,.55);max-width:480px;line-height:1.72;" data-i18n="contracts_sub">Pour répondre à vos besoins spécifiques, nous offrons trois modes de gestion contractuelle.</p>
+  </div>
+  <div style="max-width:1320px;margin:0 auto;padding:0 48px;">
+    <div class="contract-grid">
+      <div class="contract-item rv">
+        <span class="contract-icon">📋</span>
+        <div class="contract-title" data-i18n="cont1_title">À Forfait</div>
+        <p class="contract-body" data-i18n="cont1_body">Prix fixe convenu à l'avance. Prévisibilité totale pour la planification et le contrôle financier de votre projet.</p>
+      </div>
+      <div class="contract-item rv rv1">
+        <span class="contract-icon">⏱️</span>
+        <div class="contract-title" data-i18n="cont2_title">Temps &amp; Matériel</div>
+        <p class="contract-body" data-i18n="cont2_body">Facturation transparente du temps passé et des matériaux utilisés. Idéal pour les projets à portée variable ou évolutive.</p>
+      </div>
+      <div class="contract-item rv rv2">
+        <span class="contract-icon">💼</span>
+        <div class="contract-title" data-i18n="cont3_title">Coûtant Plus Marge</div>
+        <p class="contract-body" data-i18n="cont3_body">Remboursement des coûts réels plus une marge définie. Transparence maximale et flexibilité optimale pour les grands projets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="cta-grain"></div>
+  <div class="cta-lines"></div>
+  <div class="sec-in cta-cnt">
+    <h2 class="cta-h rv" data-i18n="cta_h">Construisons<br>ensemble.</h2>
+    <p class="cta-sub rv rv1" data-i18n="cta_sub">Prêt à confier votre prochain projet industriel à une équipe qui a fait ses preuves depuis 30 ans ?</p>
+    <a href="mailto:info@osloconstruction.ca" class="cta-btn rv rv2" data-i18n="cta_btn">Demander une soumission</a>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="foot-inner">
+    <span class="foot-copy" data-i18n="foot_copy">© 2024 Oslo Construction Inc. · Tous droits réservés</span>
+    <span class="foot-logo">OSLO</span>
   </div>
 </footer>
 
 <script>
-// ── TRANSLATIONS ──
-const translations = {
-  en: {
-    'page.title': 'About Oslo Construction | Industrial Mechanics · Quebec',
-    'nav.about': 'About',
-    'nav.services': 'Our Services',
-    'nav.sectors': 'Sectors',
-    'nav.projects': 'Projects',
-    'nav.manufacturing': 'Manufacturing',
-    'nav.careers': 'Careers',
-    'nav.contact': 'Contact Us',
-    'nav.contact.arrow': 'Contact Us →',
-    'mega.svc.label': 'Our<br>Services',
-    'mega.svc.desc': 'Four core disciplines. Uncompromising quality since the 1990s.',
-    'mega.svc1.title': 'Industrial Mechanics',
-    'mega.svc1.desc': 'Installation, maintenance and repair of industrial mechanical equipment across all major sectors.',
-    'mega.svc2.title': 'Piping',
-    'mega.svc2.desc': 'Complete piping systems in carbon steel, stainless steel, and specialty alloys for process industries.',
-    'mega.svc3.title': 'Welding',
-    'mega.svc3.desc': 'Certified welding including MIG, TIG, SMAW and specialized processes with X-ray testing capability.',
-    'mega.svc4.title': 'Boilermaking',
-    'mega.svc4.desc': 'Fabrication and installation of tanks, pressure vessels, hoppers, silos and structural steel.',
-    'mega.sec.label': '10+<br>Sectors',
-    'mega.sec.desc': 'Serving diverse heavy industries across Quebec and beyond.',
-    'mega.proj1': 'Light Metals',
-    'mega.proj2': 'Steel, Mining &amp; Metallurgy',
-    'mega.proj3': 'Hydroelectricity',
-    'mega.proj4': 'Pulp &amp; Paper',
-    'mega.proj5': 'Agribusiness',
-    'mega.proj6': 'Other Sectors',
-    'sec1.title': 'Steel Mills',
-    'sec2.title': 'Aerospace',
-    'sec3.title': 'Food Processing',
-    'sec4.title': 'Cement',
-    'sec5.title': 'Energy',
-    'sec6.title': 'Printing',
-    'sec7.title': 'Manufacturing',
-    'sec8.title': 'Mines &amp; Quarries',
-    'sec9.title': 'Light Metals',
-    'sec10.title': 'Pulp &amp; Paper',
-    'svc1.name.flat': 'Industrial Mechanics',
-    'svc2.name.flat': 'Piping',
-    'svc3.name.flat': 'Welding',
-    'svc4.name.flat': 'Boilermaking',
-    'fab.tag.short': 'Fabrication',
-    'ft.brand.desc': 'Industrial mechanics, piping, welding and boilermaking specialists serving Quebec\'s industrial sector since the 1990s.',
-    'ft.services.t': 'Services',
-    'ft.svc5': 'Fabrication Shop',
-    'ft.sectors.t': 'Sectors',
-    'ft.company.t': 'Company',
-    'ft.comp1': 'About Oslo',
-    'ft.comp2': 'SSE Commitment',
-    'ft.comp3': 'Our Projects',
-    'ft.copy': '© 2025 Oslo Construction. All rights reserved. · 1099 rue Lévis, Terrebonne (QC)',
-    // Hero
-    'ab.hero.eyebrow': 'Our Story · Notre histoire',
-    'ab.hero.h1.em': '30 Years',
-    'ab.hero.h1.main': 'of Trust<br>Built Hard',
-    'ab.hero.sub': 'From a bold start in the 1990s to becoming one of Quebec\'s leading industrial contractors — our growth was earned, not given.',
-    'ab.hero.btn1': 'Our History',
-    'ab.hero.btn2': 'Work With Us',
-    'ab.hero.quote': '"Our growth is not the result of chance — it is the result of meticulous work by a dedicated team who earned the trust of our clients."',
-    'ab.cnt1': 'Years Active',
-    'ab.cnt2': 'Industries',
-    'ab.cnt3': 'SSE Focused',
-    // History
-    'ab.hist.tag': 'Since the 1990s',
-    'ab.hist.h': 'A Story of<br>Earned Growth',
-    'ab.hist.body1': 'Since its founding in the 1990s, Oslo Construction has steadily grown into one of the most important companies in industrial mechanics in Quebec. Our growth is not the result of chance — it is the fruit of meticulous, deliberate work by a team of devoted managers who, day after day, earned the trust of their clients.',
-    'ab.hist.body2': 'So much so that today, our clients choose us to bid on every future project that requires our expertise. Over recent years, Oslo Construction has stood out by working regularly with Canada\'s largest companies.',
-    'ab.hist.pull': 'Forged<br>in Steel.<br>Built on<br>Trust.',
-    'ab.hist.pull.sub': 'Three decades of industrial excellence in the heart of Quebec.',
-    'tl1.title': 'The Beginning',
-    'tl1.body': 'Oslo Construction is founded in Terrebonne, Quebec, with a clear mission: deliver industrial mechanical work with uncompromising craftsmanship. A small but determined team lays the foundation of what will become one of the province\'s most trusted names in heavy industry.',
-    'tl2.title': 'Building Partnerships',
-    'tl2.body': 'A decade in, our reputation speaks for itself. Oslo earns the trust of Quebec\'s most demanding industrial clients — securing recurring contracts with leaders like Pratt &amp; Whitney, ArcelorMittal, Kruger, Bombardier and Rio Tinto Alcan. Our proactive management philosophy becomes our calling card.',
-    'tl3.title': 'A Name They Call First',
-    'tl3.body': 'Today, our clients don\'t just keep us on their roster — they choose Oslo to bid on every future project that demands our expertise. SNC-Lavalin, Hydro-Québec, and Canada\'s top industrial companies choose us not because we\'re convenient, but because we deliver.',
-    // Clients
-    'ab.clients.label': 'Trusted by Canada\'s Largest Industrial Companies',
-    // Expertise
-    'ab.exp.tag': 'Our Expertise',
-    'ab.exp.h': 'Specialists in<br>Industrial<br>Mechanics',
-    'ab.exp.body1': 'Oslo Construction is specialized in the execution of industrial mechanical projects. We also carry out the annual maintenance work required in a plant — because we understand that uptime is everything in heavy industry.',
-    'ab.exp.body2': 'Oslo stands out above all through its management of SSE (Health, Safety &amp; Environment), maintaining a competitive price, a proven quality of service, and all within the respect of deadlines.',
-    'ab.exp.body3': 'Our services are adapted to the needs of our clients — whether they are operating owners, consulting engineers, or equipment suppliers — in order to maintain the best possible quality control.',
-    'ab.exp.tag1': 'Industrial Mechanics',
-    'ab.exp.tag2': 'Piping',
-    'ab.exp.tag3': 'Boilermaking',
-    'ab.exp.tag4': 'Steel Structure',
-    'ab.exp.tag5': 'Plant Maintenance',
-    'ab.exp.tag6': 'Shutdowns',
-    // Trades
-    'ab.trades.tag': 'On the Job Site',
-    'ab.trades.h': 'Four Trades.<br>One Team.',
-    'ab.trades.sub': 'At the heart of every Oslo job site are four core trades. We have the resources to assemble multidisciplinary teams for any type of project.',
-    'ab.trade1.title': 'Field Mechanics',
-    'ab.trade1.desc': 'Mécaniciens de chantier — the backbone of any industrial installation. They handle the installation, alignment, and commissioning of the most complex machinery.',
-    'ab.trade2.title': 'Boilermakers',
-    'ab.trade2.desc': 'Chaudronniers — masters of metal. Fabricating and assembling pressure vessels, tanks, silos, and structural components with certified precision.',
-    'ab.trade3.title': 'Steel Erectors',
-    'ab.trade3.desc': 'Monteurs de structure d\'acier — building the skeleton of industry. From platforms and walkways to complete structural steel frameworks.',
-    'ab.trade4.title': 'Pipefitters',
-    'ab.trade4.desc': 'Tuyauteurs — the arteries of an industrial plant. From carbon steel to stainless alloys, they design, fabricate, and install complex process piping networks.',
-    // Management
-    'ab.mgmt.tag': 'Our Philosophy',
-    'ab.mgmt.h': 'Proactive<br>Management',
-    'ab.mgmt.body1': 'We apply our "proactive" management philosophy to all of our projects — whether they involve plant shutdowns, maintenance work, or long-term capital projects. To ensure optimal management of every project, Oslo Construction adheres to three principles represented by the pyramid.',
-    'ab.mgmt.body2': 'At the base of all our concerns: Health, Safety &amp; Environment. The body of the pyramid represents the budget we work within and must respect — bounded by quality control on one side and schedule compliance on the other.',
-    'ab.mgmt.vals.tag': 'Core Values',
-    'mgmt.v1': 'Competent, skilled personnel',
-    'mgmt.v2': 'Respect for partnership',
-    'mgmt.v3': 'A safe and motivating workplace',
-    'mgmt.v4': 'Rigorous budget monitoring',
-    'mgmt.v5': 'Respect of deadlines',
-    'mgmt.v6': 'ISO 9001:2008 quality standards',
-    // Pyramid
-    'pyr.budget': 'BUDGET',
-    'pyr.quality': 'QUALITY<br>CONTROL',
-    'pyr.schedule': 'SCHEDULE<br>COMPLIANCE',
-    'pyr.lbl1': 'Health &amp; Safety',
-    'pyr.lbl2': 'Environment',
-    'pyr.caption': 'The Oslo pyramid — every project is built on SSE, shaped by budget, bounded by quality &amp; schedule.',
-    // Values
-    'ab.val.tag': 'What We Stand For',
-    'ab.val.h': 'Our Values',
-    'ab.val.body': 'Oslo Construction provides its clients with a safe installation and a level of quality that satisfies their requirements — as well as those of ISO 9001:2008 industry standards and codes.',
-    'val1.t': 'Skilled Personnel',
-    'val1.d': 'Competent trades on every project — licensed, certified, experienced.',
-    'val2.t': 'Respect for Partnership',
-    'val2.d': 'We treat every client relationship as a long-term collaboration, not a transaction.',
-    'val3.t': 'Safe &amp; Motivating Environment',
-    'val3.d': 'A workplace where our workers thrive — because safety and morale are never optional.',
-    'val4.t': 'Rigorous Budget Monitoring',
-    'val4.d': 'Tight financial control on every contract — we protect your budget like it\'s our own.',
-    'val5.t': 'Deadline Compliance',
-    'val5.d': 'In industrial work, a day lost costs more than money. We plan to deliver on time, every time.',
-    'val6.t': 'ISO 9001:2008 Quality',
-    'val6.d': 'Installations that meet or exceed industry norms, codes, and client expectations.',
-    // Contracts
-    'ab.contracts.tag': 'Flexible Engagements',
-    'ab.contracts.h': 'Three Ways<br>to Work<br>With Us',
-    'ab.contracts.sub': 'To meet your specific needs, we offer the flexibility to manage contracts on a lump-sum, time &amp; material, or cost-plus basis.',
-    'cc1.title': 'Lump Sum',
-    'cc1.desc': 'A fixed price for a defined scope of work. Maximum cost certainty for you — maximum accountability for us. Ideal for well-defined projects with clear specifications.',
-    'cc2.title': 'Time &amp; Material',
-    'cc2.desc': 'Billed on actual labour hours and materials used. Best suited for maintenance work, shutdowns, and projects where scope evolves. Full transparency at every step.',
-    'cc3.title': 'Cost-Plus',
-    'cc3.desc': 'Reimbursement of all project costs plus a fixed margin. An open-book approach for complex, long-duration projects where collaboration and trust are paramount.',
-    // CTA
-    'ab.cta.h': 'Let\'s Build<br>Something<br>Together',
-    'ab.cta.sub': 'Ready to bring your next industrial project to life? Our team is standing by to discuss your needs, submit a competitive bid, and deliver results you can count on.',
-    'ab.cta.btn1': 'Contact Us',
-    'ab.cta.btn2': 'Our Services',
+/* ── TRANSLATIONS ── */
+const tr = {
+  fr:{
+    nav_home:'Accueil', nav_services:'Services', nav_clients:'Clients', nav_about:'À propos', nav_contact:'Contact', nav_cta:'Soumission',
+    hero_eyebrow:'Est. Années 90 · Québec, Canada',
+    hero_h1_1:'Notre', hero_h1_2:'Histoire',
+    hero_sub:'Depuis les années 90, bâtir des ponts entre l\'ambition industrielle et l\'excellence humaine — un chantier, une confiance à la fois.',
+    hero_btn1:'Découvrir notre parcours', hero_btn2:'Nous contacter', hero_scroll:'Défiler',
+    stat1:'Ans d\'expérience', stat2:'Projets réalisés', stat3:'Corps de métiers', stat4:'9001 : 2008 Certifié',
+    ch1_label:'Notre Histoire · Our Story',
+    history_h1:'Bâtie sur la confiance,', history_h2:'forgée dans l\'acier.',
+    history_p1:'Il y avait quelque chose de différent chez Oslo dès le début. Dans les années 90, alors que le Québec industriel traversait une période de transformation profonde, une équipe de bâtisseurs a fondé une entreprise sur un principe simple mais exigeant : la confiance se mérite, projet par projet, chantier après chantier.',
+    history_p2:'Trois décennies plus tard, Oslo Construction s\'est imposée comme l\'une des compagnies les plus importantes dans le domaine de la mécanique industrielle au Québec. Cette croissance n\'est pas le fruit du hasard — elle est le résultat d\'un travail minutieux et d\'une équipe de gestionnaires dévoués qui ont su gagner la confiance durable de leurs clients.',
+    history_p3:'Aujourd\'hui, notre clientèle nous choisit systématiquement pour soumissionner sur leurs futurs projets. C\'est cette confiance répétée qui est notre plus grande fierté.',
+    years_label:'+ années<br>d\'excellence',
+    img_caption:'Mécanique industrielle · Québec',
+    pull1:'"Tant et si bien qu\'aujourd\'hui, notre clientèle nous choisit pour soumissionner sur <em>tous</em> leurs futurs projets."',
+    pull1_attr:'— Oslo Construction, depuis les années 90',
+    ch2_label:'Ils nous font confiance · They trust us',
+    clients_h:'Nos Partenaires Industriels',
+    clients_sub:'Les plus grandes entreprises canadiennes nous font confiance de façon régulière pour leurs projets industriels les plus exigeants.',
+    sec_aero:'Aérospatiale', sec_steel:'Sidérurgie', sec_transport:'Transport', sec_paper:'Papier & Emballage', sec_energy:'Énergie', sec_mining:'Aluminium & Mines', sec_eng:'Ingénierie', sec_more:'Partout au Canada',
+    ch3_label:'Nos Corps de Métiers · Our Trades',
+    disc_h:'L\'Excellence à Chaque Poste',
+    disc_sub:'Sur un chantier, l\'activité d\'Oslo Construction repose sur quatre corps de métiers spécialisés, réunis en équipes multidisciplinaires.',
+    disc1_title:'Mécaniciens de Chantier', disc1_body:'Spécialistes de l\'installation, du montage et de la mise en service d\'équipements industriels lourds. Piliers de chaque intervention en usine, leur expertise garantit la fiabilité des systèmes mécaniques les plus complexes.', disc1_tag:'Mécanique industrielle',
+    disc2_title:'Chaudronniers', disc2_body:'Maîtres de la fabrication et de l\'assemblage de pièces métalliques — réservoirs, cuves, échangeurs thermiques. Leur savoir-faire en soudage et en formage du métal est le fondement d\'installations durables et sécuritaires.', disc2_tag:'Chaudronnerie & soudage',
+    disc3_title:'Monteurs de Structure d\'Acier', disc3_body:'Architectes de l\'acier, ils érigent les ossatures qui soutiennent les installations industrielles les plus ambitieuses. Du simple support à la charpente complexe, leur précision millimétrique garantit l\'intégrité structurale de chaque ouvrage.', disc3_tag:'Structure métallique',
+    disc4_title:'Tuyauteurs', disc4_body:'Experts en installation et en assemblage de systèmes de tuyauterie industrielle — vapeur, procédé, utilité. Leur maîtrise des normes de l\'industrie assure des réseaux étanches, sécuritaires et conformes aux exigences les plus strictes.', disc4_tag:'Tuyauterie industrielle',
+    eb_tag:'Notre expertise', eb_h:'Des équipes adaptées à chaque réalité.',
+    eb_body:'Oslo Construction possède les ressources pour réunir des équipes multidisciplinaires capables d\'accomplir tous types de projets — travaux d\'arrêt d\'usine (shutdown), maintenance annuelle ou projets de longue durée.',
+    eb_t1:'Shutdown / Arrêt d\'usine', eb_t2:'Maintenance annuelle', eb_t3:'Projets longue durée', eb_t4:'Contrôle qualité ISO 9001', eb_t5:'Gestion SSE proactive',
+    ch4_label:'Notre Philosophie · Our Philosophy',
+    philo_h:'Une gestion proactive. Toujours.',
+    philo_body:'Nous appliquons notre philosophie de gestion "proactive" à tous nos projets. Pour assurer une gestion optimale, Oslo Construction respecte trois principes fondamentaux, représentés par notre logo pyramidal.',
+    pillar1_title:'SSE — Santé, Sécurité, Environnement', pillar1_desc:'La base absolue de toutes nos préoccupations. Aucun compromis, aucune exception.',
+    pillar2_title:'Budget — Respect financier', pillar2_desc:'Le corps de notre pyramide. Nous travaillons avec vos budgets et nous les respectons rigoureusement.',
+    pillar3_title:'Qualité & Échéanciers', pillar3_desc:'Les deux faces de notre pyramide. Qualité éprouvée et respect absolu des délais convenus.',
+    pleg1:'Base — SSE : Fondement absolu', pleg2:'Corps — Budget : Rigueur financière', pleg3:'Sommet — Qualité & Échéanciers',
+    ch5_label:'Nos Valeurs · Our Values', values_h:'Ce qui nous définit',
+    values_sub:'Les principes qui guident chaque décision, chaque jour, sur chaque chantier.',
+    val1_title:'Personnel Compétent', val1_desc:'Des équipes qualifiées, formées et engagées — notre capital humain est notre avantage concurrentiel le plus précieux.',
+    val2_title:'Respect du Partenariat', val2_desc:'Nous construisons des relations durables fondées sur l\'honnêteté, la transparence et le respect mutuel.',
+    val3_title:'Milieu de Travail Sécuritaire', val3_desc:'Un environnement sécuritaire et motivant pour nos travailleurs est non négociable — c\'est notre responsabilité fondamentale.',
+    val4_title:'Suivi Rigoureux des Budgets', val4_desc:'La rigueur financière est un signe de respect envers nos clients. Nous gérons votre argent comme s\'il était le nôtre.',
+    val5_title:'Respect des Échéanciers', val5_desc:'Livrer à temps n\'est pas un objectif — c\'est notre standard. Chaque délai respecté est une promesse tenue.',
+    val6_title:'Qualité ISO 9001 : 2008', val6_desc:'Fournir des installations sûres répondant aux exigences de nos clients et aux normes les plus strictes de l\'industrie.',
+    contracts_tag:'Modes de gestion · Contract models',
+    contracts_h:'Vos contrats, à votre façon.', contracts_sub:'Pour répondre à vos besoins spécifiques, nous offrons trois modes de gestion contractuelle.',
+    cont1_title:'À Forfait', cont1_body:'Prix fixe convenu à l\'avance. Prévisibilité totale pour la planification et le contrôle financier de votre projet.',
+    cont2_title:'Temps & Matériel', cont2_body:'Facturation transparente du temps passé et des matériaux utilisés. Idéal pour les projets à portée variable ou évolutive.',
+    cont3_title:'Coûtant Plus Marge', cont3_body:'Remboursement des coûts réels plus une marge définie. Transparence maximale et flexibilité optimale pour les grands projets.',
+    cta_h:'Construisons<br>ensemble.', cta_sub:'Prêt à confier votre prochain projet industriel à une équipe qui a fait ses preuves depuis 30 ans ?', cta_btn:'Demander une soumission',
+    foot_copy:'© 2024 Oslo Construction Inc. · Tous droits réservés'
   },
-  fr: {
-    'page.title': 'À propos d\'Oslo Construction | Mécanique industrielle · Québec',
-    'nav.about': 'À propos',
-    'nav.services': 'Nos services',
-    'nav.sectors': 'Secteurs',
-    'nav.projects': 'Projets',
-    'nav.manufacturing': 'Fabrication',
-    'nav.careers': 'Carrières',
-    'nav.contact': 'Nous joindre',
-    'nav.contact.arrow': 'Nous joindre →',
-    'mega.svc.label': 'Nos<br>services',
-    'mega.svc.desc': 'Quatre disciplines fondamentales. Une qualité irréprochable depuis les années 1990.',
-    'mega.svc1.title': 'Mécanique industrielle',
-    'mega.svc1.desc': 'Installation, entretien et réparation d\'équipements mécaniques industriels dans tous les grands secteurs.',
-    'mega.svc2.title': 'Tuyauterie',
-    'mega.svc2.desc': 'Systèmes de tuyauterie complets en acier au carbone, acier inoxydable et alliages spéciaux pour l\'industrie de procédé.',
-    'mega.svc3.title': 'Soudage',
-    'mega.svc3.desc': 'Soudage certifié MIG, TIG, SMAW et procédés spécialisés avec capacité de contrôle par rayons X.',
-    'mega.svc4.title': 'Chaudronnerie',
-    'mega.svc4.desc': 'Fabrication et installation de réservoirs, appareils sous pression, trémies, silos et charpentes métalliques.',
-    'mega.sec.label': '10+<br>Secteurs',
-    'mega.sec.desc': 'Au service des industries lourdes du Québec et d\'ailleurs.',
-    'mega.proj1': 'Métaux légers',
-    'mega.proj2': 'Acier, mines et métallurgie',
-    'mega.proj3': 'Hydroélectricité',
-    'mega.proj4': 'Pâtes et papiers',
-    'mega.proj5': 'Agroalimentaire',
-    'mega.proj6': 'Autres secteurs',
-    'sec1.title': 'Aciéries',
-    'sec2.title': 'Aéronautique',
-    'sec3.title': 'Agroalimentaire',
-    'sec4.title': 'Cimenterie',
-    'sec5.title': 'Énergie',
-    'sec6.title': 'Imprimerie',
-    'sec7.title': 'Manufacture',
-    'sec8.title': 'Mines &amp; Carrières',
-    'sec9.title': 'Métaux légers',
-    'sec10.title': 'Pâtes et papiers',
-    'svc1.name.flat': 'Mécanique industrielle',
-    'svc2.name.flat': 'Tuyauterie',
-    'svc3.name.flat': 'Soudage',
-    'svc4.name.flat': 'Chaudronnerie',
-    'fab.tag.short': 'Fabrication',
-    'ft.brand.desc': 'Spécialistes en mécanique industrielle, tuyauterie, soudage et chaudronnerie au service du secteur industriel québécois depuis les années 1990.',
-    'ft.services.t': 'Services',
-    'ft.svc5': 'Atelier de fabrication',
-    'ft.sectors.t': 'Secteurs',
-    'ft.company.t': 'Entreprise',
-    'ft.comp1': 'À propos d\'Oslo',
-    'ft.comp2': 'Engagement SSE',
-    'ft.comp3': 'Nos projets',
-    'ft.copy': '© 2025 Oslo Construction. Tous droits réservés. · 1099 rue Lévis, Terrebonne (QC)',
-    // Hero
-    'ab.hero.eyebrow': 'Notre histoire · Our Story',
-    'ab.hero.h1.em': '30 Ans',
-    'ab.hero.h1.main': 'de Confiance<br>Méritée',
-    'ab.hero.sub': 'D\'une fondation audacieuse dans les années 90 à l\'un des entrepreneurs industriels les plus importants du Québec — notre croissance s\'est gagnée, pas donnée.',
-    'ab.hero.btn1': 'Notre histoire',
-    'ab.hero.btn2': 'Travailler avec nous',
-    'ab.hero.quote': '« Notre croissance n\'est pas le fruit du hasard — elle est le résultat d\'un travail minutieux par notre équipe de gestionnaires dévoués qui ont gagné la confiance de nos clients. »',
-    'ab.cnt1': 'Années d\'activité',
-    'ab.cnt2': 'Secteurs',
-    'ab.cnt3': 'Axés sur le SSE',
-    // History
-    'ab.hist.tag': 'Depuis les années 90',
-    'ab.hist.h': 'Une histoire de<br>croissance méritée',
-    'ab.hist.body1': 'Depuis sa création dans les années 90, Oslo Construction est devenue progressivement l\'une des plus importantes compagnies dans le domaine de la mécanique industrielle au Québec. Notre croissance n\'est pas le fruit du hasard; elle est le résultat d\'un travail minutieux par notre équipe de gestionnaires dévoués qui ont gagné la confiance de nos clients.',
-    'ab.hist.body2': 'Tant et si bien qu\'aujourd\'hui, notre clientèle nous choisit pour soumissionner sur tous leurs futurs projets qui nécessitent notre expertise. Oslo Construction s\'est démarquée en faisant affaire, de façon régulière, avec les plus grandes compagnies canadiennes.',
-    'ab.hist.pull': 'Forgée<br>dans l\'acier.<br>Bâtie sur<br>la confiance.',
-    'ab.hist.pull.sub': 'Trois décennies d\'excellence industrielle au cœur du Québec.',
-    'tl1.title': 'Les débuts',
-    'tl1.body': 'Oslo Construction est fondée à Terrebonne, Québec, avec une mission claire : livrer des travaux de mécanique industrielle avec un savoir-faire irréprochable. Une petite équipe déterminée pose les fondations de ce qui deviendra l\'un des noms les plus fiables de l\'industrie lourde au Québec.',
-    'tl2.title': 'Construction de partenariats',
-    'tl2.body': 'Une décennie plus tard, notre réputation parle d\'elle-même. Oslo gagne la confiance des clients industriels les plus exigeants du Québec — avec des contrats récurrents auprès de Pratt &amp; Whitney, ArcelorMittal, Kruger, Bombardier et Rio Tinto Alcan. Notre philosophie de gestion proactive devient notre marque de commerce.',
-    'tl3.title': 'Le premier appel',
-    'tl3.body': 'Aujourd\'hui, nos clients ne nous gardent pas simplement dans leur liste — ils nous choisissent pour soumissionner sur chaque projet qui requiert notre expertise. SNC-Lavalin, Hydro-Québec et les plus grandes compagnies industrielles du Canada nous choisissent non par commodité, mais parce que nous livrons.',
-    // Clients
-    'ab.clients.label': 'Choisis par les plus grandes compagnies industrielles canadiennes',
-    // Expertise
-    'ab.exp.tag': 'Notre expertise',
-    'ab.exp.h': 'Spécialistes en<br>mécanique<br>industrielle',
-    'ab.exp.body1': 'Oslo Construction est une entreprise spécialisée dans la réalisation des projets de mécanique industrielle. Elle effectue aussi les travaux annuels de maintenance nécessaires dans une usine — parce que nous comprenons que le temps de fonctionnement est primordial dans l\'industrie lourde.',
-    'ab.exp.body2': 'Oslo se démarque surtout par sa gestion de la SSE (Santé, Sécurité, Environnement), en conservant un prix compétitif, une qualité éprouvée de ses services et le tout, dans le respect des échéanciers.',
-    'ab.exp.body3': 'Nos services sont adaptés aux besoins de nos clients — qu\'ils soient propriétaires opérants, ingénieurs conseil ou fournisseurs d\'équipements — afin de conserver le meilleur contrôle de qualité possible.',
-    'ab.exp.tag1': 'Mécanique industrielle',
-    'ab.exp.tag2': 'Tuyauterie',
-    'ab.exp.tag3': 'Chaudronnerie',
-    'ab.exp.tag4': 'Structure d\'acier',
-    'ab.exp.tag5': 'Maintenance d\'usine',
-    'ab.exp.tag6': 'Arrêts d\'usine',
-    // Trades
-    'ab.trades.tag': 'Sur le chantier',
-    'ab.trades.h': 'Quatre corps<br>de métiers.',
-    'ab.trades.sub': 'Au cœur de chaque chantier Oslo, quatre corps de métiers essentiels. Nous possédons les ressources pour réunir des équipes multidisciplinaires pour tout type de projet.',
-    'ab.trade1.title': 'Mécaniciens de chantier',
-    'ab.trade1.desc': 'L\'épine dorsale de toute installation industrielle. Ils prennent en charge l\'installation, l\'alignement et la mise en service des équipements les plus complexes.',
-    'ab.trade2.title': 'Chaudronniers',
-    'ab.trade2.desc': 'Maîtres du métal. Fabrication et assemblage d\'appareils sous pression, réservoirs, silos et composants structuraux avec précision certifiée.',
-    'ab.trade3.title': 'Monteurs de structure d\'acier',
-    'ab.trade3.desc': 'Ils bâtissent le squelette de l\'industrie. Des plateformes et passerelles aux structures d\'acier complètes.',
-    'ab.trade4.title': 'Tuyauteurs',
-    'ab.trade4.desc': 'Les artères d\'une usine industrielle. De l\'acier au carbone aux alliages inoxydables, ils conçoivent, fabriquent et installent des réseaux de tuyauterie de procédé complexes.',
-    // Management
-    'ab.mgmt.tag': 'Notre philosophie',
-    'ab.mgmt.h': 'Gestion<br>proactive',
-    'ab.mgmt.body1': 'Nous appliquons notre philosophie de gestion « proactive » à tous nos projets — qu\'il s\'agisse de travaux d\'arrêt d\'usine (shutdown), de travaux de maintenance ou de projets de longue durée. Pour assurer une gestion optimale, Oslo Construction s\'assure de respecter trois principes représentés par sa pyramide.',
-    'ab.mgmt.body2': 'À la base de toutes nos préoccupations : la santé, sécurité et environnement. Le corps de la pyramide représente le budget avec lequel nous travaillons et que nous devons respecter, délimité par le contrôle de la qualité et le respect des échéanciers.',
-    'ab.mgmt.vals.tag': 'Nos valeurs',
-    'mgmt.v1': 'Personnel compétent',
-    'mgmt.v2': 'Respect du partenariat',
-    'mgmt.v3': 'Environnement de travail sécuritaire et motivant',
-    'mgmt.v4': 'Suivi rigoureux des budgets',
-    'mgmt.v5': 'Respect des échéanciers',
-    'mgmt.v6': 'Normes de qualité ISO 9001 : 2008',
-    // Pyramid
-    'pyr.budget': 'BUDGET',
-    'pyr.quality': 'CONTRÔLE<br>QUALITÉ',
-    'pyr.schedule': 'RESPECT DES<br>ÉCHÉANCIERS',
-    'pyr.lbl1': 'Santé &amp; Sécurité',
-    'pyr.lbl2': 'Environnement',
-    'pyr.caption': 'La pyramide Oslo — chaque projet est fondé sur le SSE, délimité par le budget, la qualité et les échéanciers.',
-    // Values
-    'ab.val.tag': 'Ce en quoi nous croyons',
-    'ab.val.h': 'Nos valeurs',
-    'ab.val.body': 'Oslo Construction fournit à ses clients une installation sûre et un niveau de qualité qui satisfasse leurs exigences, ainsi que celles des normes et codes de l\'industrie ISO 9001 : 2008.',
-    'val1.t': 'Personnel compétent',
-    'val1.d': 'Des gens de métier qualifiés à chaque projet — licenciés, certifiés, expérimentés.',
-    'val2.t': 'Respect du partenariat',
-    'val2.d': 'Nous traitons chaque relation client comme une collaboration à long terme, pas une transaction.',
-    'val3.t': 'Environnement sécuritaire &amp; motivant',
-    'val3.d': 'Un milieu de travail où nos travailleurs s\'épanouissent — parce que la sécurité et la motivation ne sont jamais facultatives.',
-    'val4.t': 'Suivi rigoureux des budgets',
-    'val4.d': 'Un contrôle financier rigoureux sur chaque contrat — nous protégeons votre budget comme s\'il était le nôtre.',
-    'val5.t': 'Respect des échéanciers',
-    'val5.d': 'Dans l\'industrie, une journée perdue coûte plus que de l\'argent. Nous planifions pour livrer à temps, chaque fois.',
-    'val6.t': 'Qualité ISO 9001 : 2008',
-    'val6.d': 'Des installations qui respectent ou dépassent les normes, codes et exigences des clients.',
-    // Contracts
-    'ab.contracts.tag': 'Engagements flexibles',
-    'ab.contracts.h': 'Trois façons de<br>travailler<br>avec nous',
-    'ab.contracts.sub': 'Pour répondre à vos besoins spécifiques, nous offrons la possibilité de gérer vos contrats à forfait, à temps matériel ou au coûtant plus marge.',
-    'cc1.title': 'Contrat à forfait',
-    'cc1.desc': 'Un prix fixe pour un champ de travaux défini. Certitude maximale des coûts pour vous — responsabilité maximale pour nous. Idéal pour des projets bien définis avec des spécifications claires.',
-    'cc2.title': 'Temps et matériaux',
-    'cc2.desc': 'Facturé selon les heures de main-d\'œuvre réelles et les matériaux utilisés. Idéal pour les travaux de maintenance, les shutdowns et les projets dont la portée évolue. Transparence totale à chaque étape.',
-    'cc3.title': 'Coûtant plus marge',
-    'cc3.desc': 'Remboursement de tous les coûts du projet plus une marge fixe. Une approche livre ouverte pour les projets complexes et de longue durée où la collaboration et la confiance sont primordiales.',
-    // CTA
-    'ab.cta.h': 'Construisons<br>quelque chose<br>ensemble',
-    'ab.cta.sub': 'Prêt à concrétiser votre prochain projet industriel? Notre équipe est disponible pour discuter de vos besoins, soumettre une offre compétitive et livrer des résultats sur lesquels vous pouvez compter.',
-    'ab.cta.btn1': 'Nous contacter',
-    'ab.cta.btn2': 'Nos services',
+  en:{
+    nav_home:'Home', nav_services:'Services', nav_clients:'Clients', nav_about:'About', nav_contact:'Contact', nav_cta:'Get a Quote',
+    hero_eyebrow:'Est. early 1990s · Québec, Canada',
+    hero_h1_1:'Our', hero_h1_2:'Story',
+    hero_sub:'Since the 1990s, bridging industrial ambition with human excellence — one project, one trust at a time.',
+    hero_btn1:'Discover our journey', hero_btn2:'Contact us', hero_scroll:'Scroll',
+    stat1:'Years of experience', stat2:'Projects delivered', stat3:'Trade specialties', stat4:'9001 : 2008 Certified',
+    ch1_label:'Notre Histoire · Our Story',
+    history_h1:'Built on trust,', history_h2:'forged in steel.',
+    history_p1:'There was something different about Oslo from the very start. In the early 1990s, as industrial Québec underwent a profound transformation, a team of builders founded a company on one simple but demanding principle: trust is earned — project by project, site by site.',
+    history_p2:'Three decades later, Oslo Construction has become one of the most important industrial mechanics companies in Québec. This growth was no accident — it is the result of meticulous work by a devoted management team that earned lasting client trust through consistent excellence.',
+    history_p3:'Today, our clients choose us systematically for all their future projects. This repeated trust is what we are most proud of.',
+    years_label:'+ years<br>of excellence',
+    img_caption:'Industrial mechanics · Québec',
+    pull1:'"So much so that today, our clients choose us to bid on <em>all</em> of their upcoming projects."',
+    pull1_attr:'— Oslo Construction, since the 1990s',
+    ch2_label:'Ils nous font confiance · They trust us',
+    clients_h:'Our Industrial Partners',
+    clients_sub:'Canada\'s largest companies regularly trust Oslo Construction with their most demanding industrial projects.',
+    sec_aero:'Aerospace', sec_steel:'Steel Industry', sec_transport:'Transportation', sec_paper:'Paper & Packaging', sec_energy:'Energy', sec_mining:'Aluminum & Mining', sec_eng:'Engineering', sec_more:'Across Canada',
+    ch3_label:'Nos Corps de Métiers · Our Trades',
+    disc_h:'Excellence at Every Position',
+    disc_sub:'On site, Oslo Construction\'s activity is built on four specialized trades, united as multidisciplinary teams.',
+    disc1_title:'Site Mechanics', disc1_body:'Specialists in the installation, assembly, and commissioning of heavy industrial equipment. As the cornerstone of every plant intervention, their expertise guarantees the reliability of the most complex mechanical systems.', disc1_tag:'Industrial mechanics',
+    disc2_title:'Boilermakers', disc2_body:'Masters of metalwork fabrication and assembly — tanks, vessels, heat exchangers. Their expertise in welding and metal forming is the foundation of durable, safe industrial installations.', disc2_tag:'Boilermaking & welding',
+    disc3_title:'Structural Steel Erectors', disc3_body:'The architects of steel, they erect the frameworks that support the most ambitious industrial installations. From simple supports to complex structures, their millimetric precision guarantees the structural integrity of every work.', disc3_tag:'Steel structure',
+    disc4_title:'Pipefitters', disc4_body:'Experts in the installation and assembly of industrial piping systems — steam, process, utility. Their command of industry standards ensures leak-free, safe networks that meet the strictest requirements.', disc4_tag:'Industrial piping',
+    eb_tag:'Our expertise', eb_h:'Teams built for every challenge.',
+    eb_body:'Oslo Construction has the resources to assemble multidisciplinary teams capable of tackling all project types — plant shutdowns, annual maintenance, or long-duration projects. Our services adapt to the needs of operating owners, consulting engineers, and equipment suppliers.',
+    eb_t1:'Plant Shutdown', eb_t2:'Annual Maintenance', eb_t3:'Long-duration Projects', eb_t4:'ISO 9001 Quality Control', eb_t5:'Proactive HSE Management',
+    ch4_label:'Notre Philosophie · Our Philosophy',
+    philo_h:'Proactive management. Always.',
+    philo_body:'We apply our "proactive" management philosophy to every project. To ensure optimal management, Oslo Construction upholds three fundamental principles, represented by our pyramidal logo.',
+    pillar1_title:'HSE — Health, Safety, Environment', pillar1_desc:'The absolute foundation of all our concerns. No compromise, no exception.',
+    pillar2_title:'Budget — Financial discipline', pillar2_desc:'The body of our pyramid. We work within your budgets and honor them rigorously.',
+    pillar3_title:'Quality & Deadlines', pillar3_desc:'The two faces of our pyramid. Proven quality and absolute respect for agreed timelines.',
+    pleg1:'Base — HSE: Absolute foundation', pleg2:'Body — Budget: Financial rigor', pleg3:'Apex — Quality & Deadlines',
+    ch5_label:'Nos Valeurs · Our Values', values_h:'What defines us',
+    values_sub:'The principles that guide every decision, every day, on every jobsite.',
+    val1_title:'Competent Personnel', val1_desc:'Qualified, trained, and committed teams — our human capital is our most precious competitive advantage.',
+    val2_title:'Partnership Respect', val2_desc:'We build lasting relationships based on honesty, transparency, and mutual respect.',
+    val3_title:'Safe Work Environment', val3_desc:'A safe and motivating environment for our workers is non-negotiable — it is our fundamental responsibility.',
+    val4_title:'Rigorous Budget Tracking', val4_desc:'Financial discipline is a sign of respect for our clients. We manage your money as if it were our own.',
+    val5_title:'Meeting Deadlines', val5_desc:'Delivering on time is not a goal — it is our standard. Every respected deadline is a promise kept.',
+    val6_title:'ISO 9001 : 2008 Quality', val6_desc:'Providing safe installations that meet client requirements and the strictest industry standards and codes.',
+    contracts_tag:'Modes de gestion · Contract models',
+    contracts_h:'Your contracts, your way.', contracts_sub:'To meet your specific needs, we offer three contractual management models.',
+    cont1_title:'Fixed Price', cont1_body:'A price agreed upon in advance. Total predictability for planning and financial control of your project.',
+    cont2_title:'Time & Material', cont2_body:'Transparent billing of time spent and materials used. Ideal for projects with variable or evolving scope.',
+    cont3_title:'Cost Plus', cont3_body:'Reimbursement of actual costs plus a defined margin. Maximum transparency and optimal flexibility for large projects.',
+    cta_h:'Let\'s build<br>together.', cta_sub:'Ready to entrust your next industrial project to a team with 30 years of proven results?', cta_btn:'Request a Quote',
+    foot_copy:'© 2024 Oslo Construction Inc. · All rights reserved'
   }
 };
 
-function setLang(lang) {
+let currentLang = 'fr';
+
+function setLang(lang){
+  currentLang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    if(tr[lang][key] !== undefined) el.innerHTML = tr[lang][key];
+  });
+  document.querySelectorAll('.lang-btn,.mob-lang-btn').forEach(b=>{
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
   document.documentElement.lang = lang;
-  document.title = translations[lang]['page.title'];
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.dataset.i18n;
-    if (translations[lang][key] !== undefined) el.innerHTML = translations[lang][key];
-  });
-  document.getElementById('btnEn').classList.toggle('active', lang === 'en');
-  document.getElementById('btnFr').classList.toggle('active', lang === 'fr');
-  document.getElementById('mobBtnEn').classList.toggle('active', lang === 'en');
-  document.getElementById('mobBtnFr').classList.toggle('active', lang === 'fr');
-  localStorage.setItem('oslo_lang', lang);
 }
 
-const savedLang = localStorage.getItem('oslo_lang') || 'en';
-setLang(savedLang);
-
-// ── HEADER SCROLL ──
-const hdr = document.getElementById('hdr');
-window.addEventListener('scroll', () => {
-  hdr.classList.toggle('solid', window.scrollY > 40);
-}, { passive: true });
-
-// ── MEGA MENU ──
-const megaItems = document.querySelectorAll('.nav-item.has-mega');
-let closeTimer = null;
-
-function openMega(item) {
-  clearTimeout(closeTimer);
-  const panelId = item.dataset.mega;
-  megaItems.forEach(i => {
-    if (i !== item) {
-      i.classList.remove('open');
-      const p = document.getElementById(i.dataset.mega);
-      if (p) p.classList.remove('open');
-    }
-  });
-  item.classList.add('open');
-  const panel = document.getElementById(panelId);
-  if (panel) panel.classList.add('open');
-}
-
-function closeMega() {
-  closeTimer = setTimeout(() => {
-    megaItems.forEach(i => {
-      i.classList.remove('open');
-      const p = document.getElementById(i.dataset.mega);
-      if (p) p.classList.remove('open');
-    });
-  }, 120);
-}
-
-megaItems.forEach(item => {
-  const btn = item.querySelector('button');
-  const panelId = item.dataset.mega;
-  const panel = document.getElementById(panelId);
-  btn.addEventListener('mouseenter', () => openMega(item));
-  item.addEventListener('mouseleave', closeMega);
-  if (panel) {
-    panel.addEventListener('mouseenter', () => clearTimeout(closeTimer));
-    panel.addEventListener('mouseleave', closeMega);
-  }
-  btn.addEventListener('click', () => {
-    if (item.classList.contains('open')) {
-      item.classList.remove('open');
-      if (panel) panel.classList.remove('open');
-    } else {
-      openMega(item);
-    }
-  });
+document.querySelectorAll('.lang-btn,.mob-lang-btn').forEach(b=>{
+  b.addEventListener('click',()=>setLang(b.dataset.lang));
 });
 
-document.addEventListener('click', (e) => {
-  if (!e.target.closest('.nav-item.has-mega') && !e.target.closest('.mega')) {
-    megaItems.forEach(i => {
-      i.classList.remove('open');
-      const p = document.getElementById(i.dataset.mega);
-      if (p) p.classList.remove('open');
-    });
-  }
-});
-
-// ── HAMBURGER ──
-const hamBtn = document.getElementById('hamBtn');
+/* ── MOBILE NAV ── */
+const burgerBtn = document.getElementById('burgerBtn');
 const mobNav = document.getElementById('mobNav');
-hamBtn.addEventListener('click', () => {
-  const open = mobNav.classList.toggle('open');
-  const spans = hamBtn.querySelectorAll('span');
-  if (open) {
-    spans[0].style.transform = 'translateY(7px) rotate(45deg)';
-    spans[1].style.opacity = '0';
-    spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
-  } else {
-    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-  }
-});
-mobNav.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    mobNav.classList.remove('open');
-    const spans = hamBtn.querySelectorAll('span');
-    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-  });
+burgerBtn.addEventListener('click',()=>{
+  mobNav.classList.toggle('open');
 });
 
-// ── SCROLL REVEAL ──
-const revEls = document.querySelectorAll('.rv');
-const revObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('vis');
-      revObs.unobserve(e.target);
+/* ── HEADER SCROLL ── */
+const hdr = document.getElementById('hdr');
+window.addEventListener('scroll',()=>{
+  hdr.classList.toggle('solid', window.scrollY > 10);
+},{passive:true});
+
+/* ── SCROLL REVEAL ── */
+const rvEls = document.querySelectorAll('.rv');
+const rvObs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting) e.target.classList.add('vis');
+  });
+},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+rvEls.forEach(el=>rvObs.observe(el));
+
+/* ── COUNT UP ── */
+function countUp(el, target, duration=1800){
+  const suffix = target >= 30 && target < 100 ? '+' : '';
+  let start = null;
+  el.textContent = '0';
+  const step = (ts)=>{
+    if(!start) start = ts;
+    const prog = Math.min((ts-start)/duration,1);
+    const ease = 1-Math.pow(1-prog,3);
+    el.textContent = Math.floor(ease * target) + (prog >= 1 ? suffix : '');
+    if(prog<1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+const countEls = document.querySelectorAll('[data-count]');
+const countObs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const target = parseInt(e.target.dataset.count);
+      countUp(e.target, target);
+      countObs.unobserve(e.target);
     }
   });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-revEls.forEach(el => revObs.observe(el));
+},{threshold:0.5});
+countEls.forEach(el=>countObs.observe(el));
 </script>
 </body>
 </html>
