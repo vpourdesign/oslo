@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const PORT = 3000;
+const PORT = 5000;
 
 const mime = {
   '.html': 'text/html',
@@ -38,6 +38,6 @@ http.createServer((req, res) => {
       res.end(data);
     }
   });
-}).listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+}).listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running at http://0.0.0.0:${PORT}`);
 });
